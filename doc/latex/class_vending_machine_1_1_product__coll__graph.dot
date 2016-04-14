@@ -1,0 +1,6 @@
+digraph "VendingMachine.Product"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{VendingMachine.Product\n|- name\l- price\l- numOfStock\l- numOfPurchased\l|+ getName()\l+ setName()\l+ getPrice()\l+ setPrice()\l+ getnumOfStock()\l+ setnumOfStock()\l+ getNumOfPurchased()\l+ setNumOfPurchased()\l+ IsEmpty()\l+ IsFull()\l~ Product()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

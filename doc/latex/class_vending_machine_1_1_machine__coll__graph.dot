@@ -1,0 +1,10 @@
+digraph "VendingMachine.Machine"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{VendingMachine.Machine\n||~ Machine()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" ~letsbe\n~sikhye\n~water\n~cola\n~cider" ,arrowhead="odiamond"];
+  Node2 [label="{VendingMachine.Product\n|- name\l- price\l- numOfStock\l- numOfPurchased\l|+ getName()\l+ setName()\l+ getPrice()\l+ setPrice()\l+ getnumOfStock()\l+ setnumOfStock()\l+ getNumOfPurchased()\l+ setNumOfPurchased()\l+ IsEmpty()\l+ IsFull()\l~ Product()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vending_machine_1_1_product.html",tooltip="음료수의 정보를 담고 있는 클래스 "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" ~change" ,arrowhead="odiamond"];
+  Node3 [label="{VendingMachine.Change\n|- tenWon\l- fiftyWon\l- oneHundredWon\l- fiveHundredWon\l- oneThousandWon\l- R_tenWon\l- R_fiftyWon\l- R_oneHundredWon\l- R_fiveHundredWon\l- R_oneThousandWon\l- total\l|+ getR_tenWon()\l+ setR_tenWon()\l+ getR_fiftyWon()\l+ setR_fiftyWon()\l+ getR_oneHundredWon()\l+ setR_oneHundredWon()\l+ getR_fiveHundredWon()\l+ setR_fiveHundredWon()\l+ getR_oneThousandWon()\l+ setR_oneThousandWon()\l그리고 13개 더...\l~ Change()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vending_machine_1_1_change.html",tooltip="돈을 넣고, 돈의 재고관리를하고, 잔돈계산 까지의 돈에 관련된 set,get 함수를 만든 클래스 ..."];
+}

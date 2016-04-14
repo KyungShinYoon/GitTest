@@ -1,0 +1,382 @@
+\hypertarget{class_vending_machine_1_1_product}{}\section{Vending\+Machine.\+Product 클래스 참조}
+\label{class_vending_machine_1_1_product}\index{Vending\+Machine.\+Product@{Vending\+Machine.\+Product}}
+
+
+음료수의 정보를 담고 있는 클래스  
+
+
+
+
+Vending\+Machine.\+Product에 대한 협력 다이어그램\+:
+% FIG 0
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{class_vending_machine_1_1_product_a9e33b9ce41e8a1cfcd6d394cbe82889b}{get\+Name} ()
+\item 
+void \hyperlink{class_vending_machine_1_1_product_aebc054f256e924dcfa3bdb92e3521a70}{set\+Name} (String \hyperlink{class_vending_machine_1_1_product_a6d22fc106e78c69153cbf8d4ca1d53e3}{name})
+\item 
+int \hyperlink{class_vending_machine_1_1_product_abf388db99a413403b8ebad6abe8bb593}{get\+Price} ()
+\item 
+void \hyperlink{class_vending_machine_1_1_product_aeeb4f3eab646fc9d1a4bb5271fd9aeb3}{set\+Price} (int \hyperlink{class_vending_machine_1_1_product_a5f80a5a57248015f48edb6354b6d23ed}{price})
+\item 
+int \hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnum\+Of\+Stock} ()
+\item 
+void \hyperlink{class_vending_machine_1_1_product_a09bbd37ae2e203492a3ca553adf3a8fc}{setnum\+Of\+Stock} (int \hyperlink{class_vending_machine_1_1_product_ab5412dead0747c2da7e8e686c2e7bd15}{num\+Of\+Stock})
+\item 
+int \hyperlink{class_vending_machine_1_1_product_aefa8a5881c5569171a8cf1161b4bd911}{get\+Num\+Of\+Purchased} ()
+\item 
+void \hyperlink{class_vending_machine_1_1_product_a45ff6ad466f274711d19adf7afbef20b}{set\+Num\+Of\+Purchased} (int \hyperlink{class_vending_machine_1_1_product_a7aed5b6b474729af5d417af9f7d8115e}{num\+Of\+Purchased})
+\item 
+boolean \hyperlink{class_vending_machine_1_1_product_a30a3d227efda7f0041ee4585d529ec45}{Is\+Empty} ()
+\item 
+boolean \hyperlink{class_vending_machine_1_1_product_ac21e8cb627fddac1d392a765348c630e}{Is\+Full} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{class_vending_machine_1_1_product_a6d22fc106e78c69153cbf8d4ca1d53e3}{name}
+\item 
+int \hyperlink{class_vending_machine_1_1_product_a5f80a5a57248015f48edb6354b6d23ed}{price}
+\item 
+int \hyperlink{class_vending_machine_1_1_product_ab5412dead0747c2da7e8e686c2e7bd15}{num\+Of\+Stock}
+\item 
+int \hyperlink{class_vending_machine_1_1_product_a7aed5b6b474729af5d417af9f7d8115e}{num\+Of\+Purchased}
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+음료수의 정보를 담고 있는 클래스 
+
+\begin{DoxyAuthor}{작성자}
+Kyung Shin Yoon 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{매개변수}
+{\em name} & \+: 음료수 이름 \\
+\hline
+{\em price} & \+: 음료수 가격 \\
+\hline
+{\em num\+Of\+Stock} & \+: 음료수 재고 \\
+\hline
+{\em num\+Of\+Purchased} & \+: 음료수 판매량 음료수 재고를 넣어주기 위해 재고 상황을 확인할 때 필요한 Is\+Empty, Is\+Full 함수를 만들어줌 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{날짜}
+April 11, 2016 
+\end{DoxyDate}
+
+
+Product.\+java 파일의 14 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{멤버 함수 문서화}
+\index{Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}}
+\subsubsection[{\texorpdfstring{get\+Name()}{getName()}}]{\setlength{\rightskip}{0pt plus 5cm}String Vending\+Machine.\+Product.\+get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_product_a9e33b9ce41e8a1cfcd6d394cbe82889b}{}\label{class_vending_machine_1_1_product_a9e33b9ce41e8a1cfcd6d394cbe82889b}
+
+
+Product.\+java 파일의 30 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Product.\+name.
+
+
+\begin{DoxyCode}
+31     \{
+32         \textcolor{keywordflow}{return} this.\hyperlink{class_vending_machine_1_1_product_a6d22fc106e78c69153cbf8d4ca1d53e3}{name};
+33     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}!get\+Num\+Of\+Purchased@{get\+Num\+Of\+Purchased}}
+\index{get\+Num\+Of\+Purchased@{get\+Num\+Of\+Purchased}!Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}}
+\subsubsection[{\texorpdfstring{get\+Num\+Of\+Purchased()}{getNumOfPurchased()}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Product.\+get\+Num\+Of\+Purchased (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_product_aefa8a5881c5569171a8cf1161b4bd911}{}\label{class_vending_machine_1_1_product_aefa8a5881c5569171a8cf1161b4bd911}
+
+
+Product.\+java 파일의 60 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Product.\+num\+Of\+Purchased.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+Machine\+U\+I(), Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+60                                    \{
+61         \textcolor{keywordflow}{return} \hyperlink{class_vending_machine_1_1_product_a7aed5b6b474729af5d417af9f7d8115e}{numOfPurchased};
+62     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}!getnum\+Of\+Stock@{getnum\+Of\+Stock}}
+\index{getnum\+Of\+Stock@{getnum\+Of\+Stock}!Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}}
+\subsubsection[{\texorpdfstring{getnum\+Of\+Stock()}{getnumOfStock()}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Product.\+getnum\+Of\+Stock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{}\label{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}
+
+
+Product.\+java 파일의 50 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Product.\+num\+Of\+Stock.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Product.\+Is\+Empty(), Vending\+Machine.\+Product.\+Is\+Full(), Vending\+Machine.\+Machine\+U\+I.\+Machine\+U\+I(), Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+51     \{
+52         \textcolor{keywordflow}{return} this.\hyperlink{class_vending_machine_1_1_product_ab5412dead0747c2da7e8e686c2e7bd15}{numOfStock};
+53     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}!get\+Price@{get\+Price}}
+\index{get\+Price@{get\+Price}!Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}}
+\subsubsection[{\texorpdfstring{get\+Price()}{getPrice()}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Product.\+get\+Price (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_product_abf388db99a413403b8ebad6abe8bb593}{}\label{class_vending_machine_1_1_product_abf388db99a413403b8ebad6abe8bb593}
+
+
+Product.\+java 파일의 40 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Product.\+price.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+41     \{
+42         \textcolor{keywordflow}{return} this.\hyperlink{class_vending_machine_1_1_product_a5f80a5a57248015f48edb6354b6d23ed}{price};
+43     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}!Is\+Empty@{Is\+Empty}}
+\index{Is\+Empty@{Is\+Empty}!Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}}
+\subsubsection[{\texorpdfstring{Is\+Empty()}{IsEmpty()}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Vending\+Machine.\+Product.\+Is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_product_a30a3d227efda7f0041ee4585d529ec45}{}\label{class_vending_machine_1_1_product_a30a3d227efda7f0041ee4585d529ec45}
+
+
+Product.\+java 파일의 68 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Product.\+getnum\+Of\+Stock().
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+69     \{
+70         \textcolor{keywordflow}{if}(this.\hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}()==0)
+71             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+72         \textcolor{keywordflow}{else}
+73             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+74     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+
+
+\index{Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}!Is\+Full@{Is\+Full}}
+\index{Is\+Full@{Is\+Full}!Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}}
+\subsubsection[{\texorpdfstring{Is\+Full()}{IsFull()}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Vending\+Machine.\+Product.\+Is\+Full (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_product_ac21e8cb627fddac1d392a765348c630e}{}\label{class_vending_machine_1_1_product_ac21e8cb627fddac1d392a765348c630e}
+
+
+Product.\+java 파일의 76 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Product.\+getnum\+Of\+Stock().
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+77     \{
+78         \textcolor{keywordflow}{if}(this.\hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}()==10)
+79             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+80         \textcolor{keywordflow}{else}
+81             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+82     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+
+
+\index{Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}}
+\subsubsection[{\texorpdfstring{set\+Name(\+String name)}{setName(String name)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vending\+Machine.\+Product.\+set\+Name (
+\begin{DoxyParamCaption}
+\item[{String}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_product_aebc054f256e924dcfa3bdb92e3521a70}{}\label{class_vending_machine_1_1_product_aebc054f256e924dcfa3bdb92e3521a70}
+
+
+Product.\+java 파일의 35 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Product.\+name.
+
+
+\begin{DoxyCode}
+36     \{
+37         this.\hyperlink{class_vending_machine_1_1_product_a6d22fc106e78c69153cbf8d4ca1d53e3}{name} = \hyperlink{class_vending_machine_1_1_product_a6d22fc106e78c69153cbf8d4ca1d53e3}{name};
+38     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}!set\+Num\+Of\+Purchased@{set\+Num\+Of\+Purchased}}
+\index{set\+Num\+Of\+Purchased@{set\+Num\+Of\+Purchased}!Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}}
+\subsubsection[{\texorpdfstring{set\+Num\+Of\+Purchased(int num\+Of\+Purchased)}{setNumOfPurchased(int numOfPurchased)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vending\+Machine.\+Product.\+set\+Num\+Of\+Purchased (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Of\+Purchased}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_product_a45ff6ad466f274711d19adf7afbef20b}{}\label{class_vending_machine_1_1_product_a45ff6ad466f274711d19adf7afbef20b}
+
+
+Product.\+java 파일의 64 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Product.\+num\+Of\+Purchased.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+64                                                       \{
+65         this.\hyperlink{class_vending_machine_1_1_product_a7aed5b6b474729af5d417af9f7d8115e}{numOfPurchased} = \hyperlink{class_vending_machine_1_1_product_a7aed5b6b474729af5d417af9f7d8115e}{numOfPurchased};
+66     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}!setnum\+Of\+Stock@{setnum\+Of\+Stock}}
+\index{setnum\+Of\+Stock@{setnum\+Of\+Stock}!Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}}
+\subsubsection[{\texorpdfstring{setnum\+Of\+Stock(int num\+Of\+Stock)}{setnumOfStock(int numOfStock)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vending\+Machine.\+Product.\+setnum\+Of\+Stock (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Of\+Stock}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_product_a09bbd37ae2e203492a3ca553adf3a8fc}{}\label{class_vending_machine_1_1_product_a09bbd37ae2e203492a3ca553adf3a8fc}
+
+
+Product.\+java 파일의 55 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Product.\+num\+Of\+Stock.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+56     \{
+57         this.\hyperlink{class_vending_machine_1_1_product_ab5412dead0747c2da7e8e686c2e7bd15}{numOfStock} = \hyperlink{class_vending_machine_1_1_product_ab5412dead0747c2da7e8e686c2e7bd15}{numOfStock};
+58     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}!set\+Price@{set\+Price}}
+\index{set\+Price@{set\+Price}!Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}}
+\subsubsection[{\texorpdfstring{set\+Price(int price)}{setPrice(int price)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vending\+Machine.\+Product.\+set\+Price (
+\begin{DoxyParamCaption}
+\item[{int}]{price}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_product_aeeb4f3eab646fc9d1a4bb5271fd9aeb3}{}\label{class_vending_machine_1_1_product_aeeb4f3eab646fc9d1a4bb5271fd9aeb3}
+
+
+Product.\+java 파일의 45 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Product.\+price.
+
+
+\begin{DoxyCode}
+46     \{
+47         this.\hyperlink{class_vending_machine_1_1_product_a5f80a5a57248015f48edb6354b6d23ed}{price} = \hyperlink{class_vending_machine_1_1_product_a5f80a5a57248015f48edb6354b6d23ed}{price};
+48     \}
+\end{DoxyCode}
+
+
+\subsection{멤버 데이타 문서화}
+\index{Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}!name@{name}}
+\index{name@{name}!Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}}
+\subsubsection[{\texorpdfstring{name}{name}}]{\setlength{\rightskip}{0pt plus 5cm}String Vending\+Machine.\+Product.\+name\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_product_a6d22fc106e78c69153cbf8d4ca1d53e3}{}\label{class_vending_machine_1_1_product_a6d22fc106e78c69153cbf8d4ca1d53e3}
+
+
+Product.\+java 파일의 16 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Product.\+get\+Name(), Vending\+Machine.\+Product.\+set\+Name().
+
+\index{Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}!num\+Of\+Purchased@{num\+Of\+Purchased}}
+\index{num\+Of\+Purchased@{num\+Of\+Purchased}!Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}}
+\subsubsection[{\texorpdfstring{num\+Of\+Purchased}{numOfPurchased}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Product.\+num\+Of\+Purchased\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_product_a7aed5b6b474729af5d417af9f7d8115e}{}\label{class_vending_machine_1_1_product_a7aed5b6b474729af5d417af9f7d8115e}
+
+
+Product.\+java 파일의 19 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Product.\+get\+Num\+Of\+Purchased(), Vending\+Machine.\+Product.\+set\+Num\+Of\+Purchased().
+
+\index{Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}!num\+Of\+Stock@{num\+Of\+Stock}}
+\index{num\+Of\+Stock@{num\+Of\+Stock}!Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}}
+\subsubsection[{\texorpdfstring{num\+Of\+Stock}{numOfStock}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Product.\+num\+Of\+Stock\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_product_ab5412dead0747c2da7e8e686c2e7bd15}{}\label{class_vending_machine_1_1_product_ab5412dead0747c2da7e8e686c2e7bd15}
+
+
+Product.\+java 파일의 18 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Product.\+getnum\+Of\+Stock(), Vending\+Machine.\+Product.\+setnum\+Of\+Stock().
+
+\index{Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}!price@{price}}
+\index{price@{price}!Vending\+Machine\+::\+Product@{Vending\+Machine\+::\+Product}}
+\subsubsection[{\texorpdfstring{price}{price}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Product.\+price\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_product_a5f80a5a57248015f48edb6354b6d23ed}{}\label{class_vending_machine_1_1_product_a5f80a5a57248015f48edb6354b6d23ed}
+
+
+Product.\+java 파일의 17 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Product.\+get\+Price(), Vending\+Machine.\+Product.\+set\+Price().
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/pub/workspace/\+S\+Eproject1/src/\+Vending\+Machine/\hyperlink{_product_8java}{Product.\+java}\end{DoxyCompactItemize}

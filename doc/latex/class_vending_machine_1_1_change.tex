@@ -1,0 +1,782 @@
+\hypertarget{class_vending_machine_1_1_change}{}\section{Vending\+Machine.\+Change 클래스 참조}
+\label{class_vending_machine_1_1_change}\index{Vending\+Machine.\+Change@{Vending\+Machine.\+Change}}
+
+
+돈을 넣고, 돈의 재고관리를하고, 잔돈계산 까지의 돈에 관련된 set,get 함수를 만든 클래스  
+
+
+
+
+Vending\+Machine.\+Change에 대한 협력 다이어그램\+:
+% FIG 0
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_vending_machine_1_1_change_a61c2682e5f0b7999cb830a45a94bfc78}{get\+R\+\_\+ten\+Won} ()
+\item 
+void \hyperlink{class_vending_machine_1_1_change_acb2664b80fd5564b3add62845ee0afc5}{set\+R\+\_\+ten\+Won} (int r\+\_\+ten\+Won)
+\item 
+int \hyperlink{class_vending_machine_1_1_change_a9d9200ae5ebb4b68d5f8435a16cbc905}{get\+R\+\_\+fifty\+Won} ()
+\item 
+void \hyperlink{class_vending_machine_1_1_change_aa930d31b2739651eb96b5b1d49dedf50}{set\+R\+\_\+fifty\+Won} (int r\+\_\+fifty\+Won)
+\item 
+int \hyperlink{class_vending_machine_1_1_change_a009fddaf04c554a4f3ecc9907b6a929e}{get\+R\+\_\+one\+Hundred\+Won} ()
+\item 
+void \hyperlink{class_vending_machine_1_1_change_a39efaf418a391d62174308b843ac6dd8}{set\+R\+\_\+one\+Hundred\+Won} (int r\+\_\+one\+Hundred\+Won)
+\item 
+int \hyperlink{class_vending_machine_1_1_change_a884e656f905999d7181b680299e9c9e9}{get\+R\+\_\+five\+Hundred\+Won} ()
+\item 
+void \hyperlink{class_vending_machine_1_1_change_a850d426d0b7150ef2095363590e1f0da}{set\+R\+\_\+five\+Hundred\+Won} (int r\+\_\+five\+Hundred\+Won)
+\item 
+int \hyperlink{class_vending_machine_1_1_change_a304e4aabef0c0ff7e21b3e761489f076}{get\+R\+\_\+one\+Thousand\+Won} ()
+\item 
+void \hyperlink{class_vending_machine_1_1_change_a37f3b2d778d33f32aff10e8985175b4b}{set\+R\+\_\+one\+Thousand\+Won} (int r\+\_\+one\+Thousand\+Won)
+\item 
+int \hyperlink{class_vending_machine_1_1_change_ac6b95aa923e6727f5ecf8095b7f42e99}{get\+Ten\+Won} ()
+\item 
+void \hyperlink{class_vending_machine_1_1_change_a3fb3cf3b5c93c3c52fbc7d9c6a43af00}{set\+Ten\+Won} (int \hyperlink{class_vending_machine_1_1_change_a0c9fe365f26d478fc07e1bb9828cfcc7}{ten\+Won})
+\item 
+int \hyperlink{class_vending_machine_1_1_change_a1ef85014ae005316e4a39db49e8364a7}{get\+Fifty\+Won} ()
+\item 
+void \hyperlink{class_vending_machine_1_1_change_a504308459778738b57096e5846d4a5ba}{set\+Fifty\+Won} (int \hyperlink{class_vending_machine_1_1_change_a7559b56180084c477b10aebae956e13f}{fifty\+Won})
+\item 
+int \hyperlink{class_vending_machine_1_1_change_ac814aaff5cfe37b1a71899f750f4d99e}{get\+One\+Hundred\+Won} ()
+\item 
+void \hyperlink{class_vending_machine_1_1_change_accf770f112e4a58880b90d2d2941db3d}{set\+One\+Hundred\+Won} (int \hyperlink{class_vending_machine_1_1_change_a82f462b3cad2218fb4c8ca15f4915374}{one\+Hundred\+Won})
+\item 
+int \hyperlink{class_vending_machine_1_1_change_afa26632165b427a19133f182996587a3}{get\+Five\+Hundred\+Won} ()
+\item 
+void \hyperlink{class_vending_machine_1_1_change_ae5dab6be91f68fc364f004649568deb8}{set\+Five\+Hundred\+Won} (int \hyperlink{class_vending_machine_1_1_change_a83d616c8b0b5c5b560edaeb06d2e3dc0}{five\+Hundred\+Won})
+\item 
+int \hyperlink{class_vending_machine_1_1_change_a4207ff32f227afb89076b87a3812cf2e}{get\+One\+Thousand\+Won} ()
+\item 
+void \hyperlink{class_vending_machine_1_1_change_a31d951e1dcdab0d4cbbc4e76219608ae}{set\+One\+Thousand\+Won} (int one\+Thousandy\+Won)
+\item 
+int \hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal} ()
+\item 
+void \hyperlink{class_vending_machine_1_1_change_a400cce1d214d8e70ae8018aaaa8b1794}{settotal} (int \hyperlink{class_vending_machine_1_1_change_aaa54155607801f52da0a520ef638e51d}{total})
+\item 
+void \hyperlink{class_vending_machine_1_1_change_a8a18aaee61e801a42585bcab94aa57cf}{refund} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_vending_machine_1_1_change_a0c9fe365f26d478fc07e1bb9828cfcc7}{ten\+Won}
+\item 
+int \hyperlink{class_vending_machine_1_1_change_a7559b56180084c477b10aebae956e13f}{fifty\+Won}
+\item 
+int \hyperlink{class_vending_machine_1_1_change_a82f462b3cad2218fb4c8ca15f4915374}{one\+Hundred\+Won}
+\item 
+int \hyperlink{class_vending_machine_1_1_change_a83d616c8b0b5c5b560edaeb06d2e3dc0}{five\+Hundred\+Won}
+\item 
+int \hyperlink{class_vending_machine_1_1_change_a949998e6d45fdaa880ebfa7ae2e06240}{one\+Thousand\+Won}
+\item 
+int \hyperlink{class_vending_machine_1_1_change_ade66d07bd5a80d7ea0dfc34704714243}{R\+\_\+ten\+Won}
+\item 
+int \hyperlink{class_vending_machine_1_1_change_a4e21e933b5ee7b25ebb7318af485de4e}{R\+\_\+fifty\+Won}
+\item 
+int \hyperlink{class_vending_machine_1_1_change_a03ee38bdf926f63d3d537d54b6dd6c85}{R\+\_\+one\+Hundred\+Won}
+\item 
+int \hyperlink{class_vending_machine_1_1_change_a37aebab952ad10a6c3a97d525eb20012}{R\+\_\+five\+Hundred\+Won}
+\item 
+int \hyperlink{class_vending_machine_1_1_change_aedcf39060a7c95aa27cce2d74853a16a}{R\+\_\+one\+Thousand\+Won}
+\item 
+int \hyperlink{class_vending_machine_1_1_change_aaa54155607801f52da0a520ef638e51d}{total}
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+돈을 넣고, 돈의 재고관리를하고, 잔돈계산 까지의 돈에 관련된 set,get 함수를 만든 클래스 
+
+\begin{DoxyAuthor}{작성자}
+Kyung Shin Yoon 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{매개변수}
+{\em tenwon$\sim$one\+Thousand\+Won} & \+: 소비자가 넣을 돈, 돈의 재고를 추가해줄때 필요한 변수 R\+\_\+ten\+Won$\sim$\+R\+\_\+one\+Thousand\+Won \+: 돈을 반환할 때 필요한 잔돈을 나타내는 변수 total \+: 투입금액을 나타내는 변수 quantity \+: 자판기에 들어가있는 동전의 갯수 \hyperlink{class_vending_machine_1_1_change_a8a18aaee61e801a42585bcab94aa57cf}{refund()} \+: 잔돈반환을 해주기위한 계산을 해주는 함수를 만듬(자판기안의 돈의 재고에서 반환되는 돈의 개수를 빼준다) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{날짜}
+April 11,2016 
+\end{DoxyDate}
+
+
+Change.\+java 파일의 14 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{멤버 함수 문서화}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!get\+Fifty\+Won@{get\+Fifty\+Won}}
+\index{get\+Fifty\+Won@{get\+Fifty\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{get\+Fifty\+Won()}{getFiftyWon()}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+get\+Fifty\+Won (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_a1ef85014ae005316e4a39db49e8364a7}{}\label{class_vending_machine_1_1_change_a1ef85014ae005316e4a39db49e8364a7}
+
+
+Change.\+java 파일의 87 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Change.\+fifty\+Won.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+Machine\+U\+I(), Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+87                              \{
+88         \textcolor{keywordflow}{return} \hyperlink{class_vending_machine_1_1_change_a7559b56180084c477b10aebae956e13f}{fiftyWon};
+89     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!get\+Five\+Hundred\+Won@{get\+Five\+Hundred\+Won}}
+\index{get\+Five\+Hundred\+Won@{get\+Five\+Hundred\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{get\+Five\+Hundred\+Won()}{getFiveHundredWon()}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+get\+Five\+Hundred\+Won (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_afa26632165b427a19133f182996587a3}{}\label{class_vending_machine_1_1_change_afa26632165b427a19133f182996587a3}
+
+
+Change.\+java 파일의 103 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Change.\+five\+Hundred\+Won.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+Machine\+U\+I(), Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+103                                    \{
+104         \textcolor{keywordflow}{return} \hyperlink{class_vending_machine_1_1_change_a83d616c8b0b5c5b560edaeb06d2e3dc0}{fiveHundredWon};
+105     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!get\+One\+Hundred\+Won@{get\+One\+Hundred\+Won}}
+\index{get\+One\+Hundred\+Won@{get\+One\+Hundred\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{get\+One\+Hundred\+Won()}{getOneHundredWon()}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+get\+One\+Hundred\+Won (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_ac814aaff5cfe37b1a71899f750f4d99e}{}\label{class_vending_machine_1_1_change_ac814aaff5cfe37b1a71899f750f4d99e}
+
+
+Change.\+java 파일의 95 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Change.\+one\+Hundred\+Won.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+Machine\+U\+I(), Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+95                                   \{
+96         \textcolor{keywordflow}{return} \hyperlink{class_vending_machine_1_1_change_a82f462b3cad2218fb4c8ca15f4915374}{oneHundredWon};
+97     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!get\+One\+Thousand\+Won@{get\+One\+Thousand\+Won}}
+\index{get\+One\+Thousand\+Won@{get\+One\+Thousand\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{get\+One\+Thousand\+Won()}{getOneThousandWon()}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+get\+One\+Thousand\+Won (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_a4207ff32f227afb89076b87a3812cf2e}{}\label{class_vending_machine_1_1_change_a4207ff32f227afb89076b87a3812cf2e}
+
+
+Change.\+java 파일의 111 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Change.\+one\+Thousand\+Won.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+Machine\+U\+I(), Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+111                                    \{
+112         \textcolor{keywordflow}{return} \hyperlink{class_vending_machine_1_1_change_a949998e6d45fdaa880ebfa7ae2e06240}{oneThousandWon};
+113     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!get\+R\+\_\+fifty\+Won@{get\+R\+\_\+fifty\+Won}}
+\index{get\+R\+\_\+fifty\+Won@{get\+R\+\_\+fifty\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{get\+R\+\_\+fifty\+Won()}{getR_fiftyWon()}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+get\+R\+\_\+fifty\+Won (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_a9d9200ae5ebb4b68d5f8435a16cbc905}{}\label{class_vending_machine_1_1_change_a9d9200ae5ebb4b68d5f8435a16cbc905}
+
+
+Change.\+java 파일의 46 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Change.\+R\+\_\+fifty\+Won.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+46                                \{
+47         \textcolor{keywordflow}{return} \hyperlink{class_vending_machine_1_1_change_a4e21e933b5ee7b25ebb7318af485de4e}{R\_fiftyWon};
+48     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!get\+R\+\_\+five\+Hundred\+Won@{get\+R\+\_\+five\+Hundred\+Won}}
+\index{get\+R\+\_\+five\+Hundred\+Won@{get\+R\+\_\+five\+Hundred\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{get\+R\+\_\+five\+Hundred\+Won()}{getR_fiveHundredWon()}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+get\+R\+\_\+five\+Hundred\+Won (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_a884e656f905999d7181b680299e9c9e9}{}\label{class_vending_machine_1_1_change_a884e656f905999d7181b680299e9c9e9}
+
+
+Change.\+java 파일의 62 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Change.\+R\+\_\+five\+Hundred\+Won.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+62                                      \{
+63         \textcolor{keywordflow}{return} \hyperlink{class_vending_machine_1_1_change_a37aebab952ad10a6c3a97d525eb20012}{R\_fiveHundredWon};
+64     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!get\+R\+\_\+one\+Hundred\+Won@{get\+R\+\_\+one\+Hundred\+Won}}
+\index{get\+R\+\_\+one\+Hundred\+Won@{get\+R\+\_\+one\+Hundred\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{get\+R\+\_\+one\+Hundred\+Won()}{getR_oneHundredWon()}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+get\+R\+\_\+one\+Hundred\+Won (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_a009fddaf04c554a4f3ecc9907b6a929e}{}\label{class_vending_machine_1_1_change_a009fddaf04c554a4f3ecc9907b6a929e}
+
+
+Change.\+java 파일의 54 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Change.\+R\+\_\+one\+Hundred\+Won.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+54                                     \{
+55         \textcolor{keywordflow}{return} \hyperlink{class_vending_machine_1_1_change_a03ee38bdf926f63d3d537d54b6dd6c85}{R\_oneHundredWon};
+56     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!get\+R\+\_\+one\+Thousand\+Won@{get\+R\+\_\+one\+Thousand\+Won}}
+\index{get\+R\+\_\+one\+Thousand\+Won@{get\+R\+\_\+one\+Thousand\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{get\+R\+\_\+one\+Thousand\+Won()}{getR_oneThousandWon()}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+get\+R\+\_\+one\+Thousand\+Won (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_a304e4aabef0c0ff7e21b3e761489f076}{}\label{class_vending_machine_1_1_change_a304e4aabef0c0ff7e21b3e761489f076}
+
+
+Change.\+java 파일의 70 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Change.\+R\+\_\+one\+Thousand\+Won.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+70                                      \{
+71         \textcolor{keywordflow}{return} \hyperlink{class_vending_machine_1_1_change_aedcf39060a7c95aa27cce2d74853a16a}{R\_oneThousandWon};
+72     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!get\+R\+\_\+ten\+Won@{get\+R\+\_\+ten\+Won}}
+\index{get\+R\+\_\+ten\+Won@{get\+R\+\_\+ten\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{get\+R\+\_\+ten\+Won()}{getR_tenWon()}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+get\+R\+\_\+ten\+Won (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_a61c2682e5f0b7999cb830a45a94bfc78}{}\label{class_vending_machine_1_1_change_a61c2682e5f0b7999cb830a45a94bfc78}
+
+
+Change.\+java 파일의 38 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Change.\+R\+\_\+ten\+Won.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+38                               \{
+39         \textcolor{keywordflow}{return} \hyperlink{class_vending_machine_1_1_change_ade66d07bd5a80d7ea0dfc34704714243}{R\_tenWon};
+40     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!get\+Ten\+Won@{get\+Ten\+Won}}
+\index{get\+Ten\+Won@{get\+Ten\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{get\+Ten\+Won()}{getTenWon()}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+get\+Ten\+Won (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_ac6b95aa923e6727f5ecf8095b7f42e99}{}\label{class_vending_machine_1_1_change_ac6b95aa923e6727f5ecf8095b7f42e99}
+
+
+Change.\+java 파일의 79 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Change.\+ten\+Won.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+Machine\+U\+I(), Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+79                            \{
+80         \textcolor{keywordflow}{return} \hyperlink{class_vending_machine_1_1_change_a0c9fe365f26d478fc07e1bb9828cfcc7}{tenWon};
+81     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!gettotal@{gettotal}}
+\index{gettotal@{gettotal}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{gettotal()}{gettotal()}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+gettotal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{}\label{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}
+
+
+Change.\+java 파일의 119 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Change.\+total.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+Machine\+U\+I(), Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+120     \{
+121         \textcolor{keywordflow}{return} this.\hyperlink{class_vending_machine_1_1_change_aaa54155607801f52da0a520ef638e51d}{total};
+122     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!refund@{refund}}
+\index{refund@{refund}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{refund()}{refund()}}]{\setlength{\rightskip}{0pt plus 5cm}void Vending\+Machine.\+Change.\+refund (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_a8a18aaee61e801a42585bcab94aa57cf}{}\label{class_vending_machine_1_1_change_a8a18aaee61e801a42585bcab94aa57cf}
+
+
+Change.\+java 파일의 129 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Change.\+R\+\_\+fifty\+Won, Vending\+Machine.\+Change.\+R\+\_\+five\+Hundred\+Won, Vending\+Machine.\+Change.\+R\+\_\+one\+Hundred\+Won, Vending\+Machine.\+Change.\+R\+\_\+one\+Thousand\+Won, Vending\+Machine.\+Change.\+R\+\_\+ten\+Won.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+130     \{
+131         this.\hyperlink{class_vending_machine_1_1_change_aedcf39060a7c95aa27cce2d74853a16a}{R\_oneThousandWon} = this.\hyperlink{class_vending_machine_1_1_change_aaa54155607801f52da0a520ef638e51d}{total}/1000;
+132         this.\hyperlink{class_vending_machine_1_1_change_aaa54155607801f52da0a520ef638e51d}{total} = this.\hyperlink{class_vending_machine_1_1_change_aaa54155607801f52da0a520ef638e51d}{total}%1000;
+133         this.\hyperlink{class_vending_machine_1_1_change_a37aebab952ad10a6c3a97d525eb20012}{R\_fiveHundredWon} = this.\hyperlink{class_vending_machine_1_1_change_aaa54155607801f52da0a520ef638e51d}{total}/500;
+134         this.\hyperlink{class_vending_machine_1_1_change_aaa54155607801f52da0a520ef638e51d}{total} = this.\hyperlink{class_vending_machine_1_1_change_aaa54155607801f52da0a520ef638e51d}{total}%500;
+135         this.\hyperlink{class_vending_machine_1_1_change_a03ee38bdf926f63d3d537d54b6dd6c85}{R\_oneHundredWon} = this.\hyperlink{class_vending_machine_1_1_change_aaa54155607801f52da0a520ef638e51d}{total}/100;
+136         this.\hyperlink{class_vending_machine_1_1_change_aaa54155607801f52da0a520ef638e51d}{total} = this.\hyperlink{class_vending_machine_1_1_change_aaa54155607801f52da0a520ef638e51d}{total}%100;
+137         this.\hyperlink{class_vending_machine_1_1_change_a4e21e933b5ee7b25ebb7318af485de4e}{R\_fiftyWon} = this.\hyperlink{class_vending_machine_1_1_change_aaa54155607801f52da0a520ef638e51d}{total}/50;
+138         this.\hyperlink{class_vending_machine_1_1_change_aaa54155607801f52da0a520ef638e51d}{total} = this.\hyperlink{class_vending_machine_1_1_change_aaa54155607801f52da0a520ef638e51d}{total}%50;
+139         this.\hyperlink{class_vending_machine_1_1_change_ade66d07bd5a80d7ea0dfc34704714243}{R\_tenWon} = this.\hyperlink{class_vending_machine_1_1_change_aaa54155607801f52da0a520ef638e51d}{total}/10;
+140         this.\hyperlink{class_vending_machine_1_1_change_aaa54155607801f52da0a520ef638e51d}{total} = 0;
+141         this.\hyperlink{class_vending_machine_1_1_change_a949998e6d45fdaa880ebfa7ae2e06240}{oneThousandWon} -= this.\hyperlink{class_vending_machine_1_1_change_aedcf39060a7c95aa27cce2d74853a16a}{R\_oneThousandWon};
+142         this.\hyperlink{class_vending_machine_1_1_change_a83d616c8b0b5c5b560edaeb06d2e3dc0}{fiveHundredWon} -= this.\hyperlink{class_vending_machine_1_1_change_a37aebab952ad10a6c3a97d525eb20012}{R\_fiveHundredWon};
+143         this.\hyperlink{class_vending_machine_1_1_change_a82f462b3cad2218fb4c8ca15f4915374}{oneHundredWon} -= this.\hyperlink{class_vending_machine_1_1_change_a03ee38bdf926f63d3d537d54b6dd6c85}{R\_oneHundredWon};
+144         this.\hyperlink{class_vending_machine_1_1_change_a7559b56180084c477b10aebae956e13f}{fiftyWon} -= this.\hyperlink{class_vending_machine_1_1_change_a4e21e933b5ee7b25ebb7318af485de4e}{R\_fiftyWon};
+145         this.\hyperlink{class_vending_machine_1_1_change_a0c9fe365f26d478fc07e1bb9828cfcc7}{tenWon} -= this.\hyperlink{class_vending_machine_1_1_change_ade66d07bd5a80d7ea0dfc34704714243}{R\_tenWon};
+146     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!set\+Fifty\+Won@{set\+Fifty\+Won}}
+\index{set\+Fifty\+Won@{set\+Fifty\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{set\+Fifty\+Won(int fifty\+Won)}{setFiftyWon(int fiftyWon)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vending\+Machine.\+Change.\+set\+Fifty\+Won (
+\begin{DoxyParamCaption}
+\item[{int}]{fifty\+Won}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_a504308459778738b57096e5846d4a5ba}{}\label{class_vending_machine_1_1_change_a504308459778738b57096e5846d4a5ba}
+
+
+Change.\+java 파일의 91 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Change.\+fifty\+Won.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+91                                           \{
+92         this.\hyperlink{class_vending_machine_1_1_change_a7559b56180084c477b10aebae956e13f}{fiftyWon} = \hyperlink{class_vending_machine_1_1_change_a7559b56180084c477b10aebae956e13f}{fiftyWon};
+93     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!set\+Five\+Hundred\+Won@{set\+Five\+Hundred\+Won}}
+\index{set\+Five\+Hundred\+Won@{set\+Five\+Hundred\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{set\+Five\+Hundred\+Won(int five\+Hundred\+Won)}{setFiveHundredWon(int fiveHundredWon)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vending\+Machine.\+Change.\+set\+Five\+Hundred\+Won (
+\begin{DoxyParamCaption}
+\item[{int}]{five\+Hundred\+Won}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_ae5dab6be91f68fc364f004649568deb8}{}\label{class_vending_machine_1_1_change_ae5dab6be91f68fc364f004649568deb8}
+
+
+Change.\+java 파일의 107 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Change.\+five\+Hundred\+Won.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+107                                                       \{
+108         this.\hyperlink{class_vending_machine_1_1_change_a83d616c8b0b5c5b560edaeb06d2e3dc0}{fiveHundredWon} = \hyperlink{class_vending_machine_1_1_change_a83d616c8b0b5c5b560edaeb06d2e3dc0}{fiveHundredWon};
+109     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!set\+One\+Hundred\+Won@{set\+One\+Hundred\+Won}}
+\index{set\+One\+Hundred\+Won@{set\+One\+Hundred\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{set\+One\+Hundred\+Won(int one\+Hundred\+Won)}{setOneHundredWon(int oneHundredWon)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vending\+Machine.\+Change.\+set\+One\+Hundred\+Won (
+\begin{DoxyParamCaption}
+\item[{int}]{one\+Hundred\+Won}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_accf770f112e4a58880b90d2d2941db3d}{}\label{class_vending_machine_1_1_change_accf770f112e4a58880b90d2d2941db3d}
+
+
+Change.\+java 파일의 99 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Change.\+one\+Hundred\+Won.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+99                                                     \{
+100         this.\hyperlink{class_vending_machine_1_1_change_a82f462b3cad2218fb4c8ca15f4915374}{oneHundredWon} = \hyperlink{class_vending_machine_1_1_change_a82f462b3cad2218fb4c8ca15f4915374}{oneHundredWon};
+101     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!set\+One\+Thousand\+Won@{set\+One\+Thousand\+Won}}
+\index{set\+One\+Thousand\+Won@{set\+One\+Thousand\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{set\+One\+Thousand\+Won(int one\+Thousandy\+Won)}{setOneThousandWon(int oneThousandyWon)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vending\+Machine.\+Change.\+set\+One\+Thousand\+Won (
+\begin{DoxyParamCaption}
+\item[{int}]{one\+Thousandy\+Won}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_a31d951e1dcdab0d4cbbc4e76219608ae}{}\label{class_vending_machine_1_1_change_a31d951e1dcdab0d4cbbc4e76219608ae}
+
+
+Change.\+java 파일의 115 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+115                                                        \{
+116         this.\hyperlink{class_vending_machine_1_1_change_a949998e6d45fdaa880ebfa7ae2e06240}{oneThousandWon} = oneThousandyWon;
+117     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!set\+R\+\_\+fifty\+Won@{set\+R\+\_\+fifty\+Won}}
+\index{set\+R\+\_\+fifty\+Won@{set\+R\+\_\+fifty\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{set\+R\+\_\+fifty\+Won(int r\+\_\+fifty\+Won)}{setR_fiftyWon(int r_fiftyWon)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vending\+Machine.\+Change.\+set\+R\+\_\+fifty\+Won (
+\begin{DoxyParamCaption}
+\item[{int}]{r\+\_\+fifty\+Won}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_aa930d31b2739651eb96b5b1d49dedf50}{}\label{class_vending_machine_1_1_change_aa930d31b2739651eb96b5b1d49dedf50}
+
+
+Change.\+java 파일의 50 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+50                                               \{
+51         \hyperlink{class_vending_machine_1_1_change_a4e21e933b5ee7b25ebb7318af485de4e}{R\_fiftyWon} = r\_fiftyWon;
+52     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!set\+R\+\_\+five\+Hundred\+Won@{set\+R\+\_\+five\+Hundred\+Won}}
+\index{set\+R\+\_\+five\+Hundred\+Won@{set\+R\+\_\+five\+Hundred\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{set\+R\+\_\+five\+Hundred\+Won(int r\+\_\+five\+Hundred\+Won)}{setR_fiveHundredWon(int r_fiveHundredWon)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vending\+Machine.\+Change.\+set\+R\+\_\+five\+Hundred\+Won (
+\begin{DoxyParamCaption}
+\item[{int}]{r\+\_\+five\+Hundred\+Won}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_a850d426d0b7150ef2095363590e1f0da}{}\label{class_vending_machine_1_1_change_a850d426d0b7150ef2095363590e1f0da}
+
+
+Change.\+java 파일의 66 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+66                                                           \{
+67         \hyperlink{class_vending_machine_1_1_change_a37aebab952ad10a6c3a97d525eb20012}{R\_fiveHundredWon} = r\_fiveHundredWon;
+68     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!set\+R\+\_\+one\+Hundred\+Won@{set\+R\+\_\+one\+Hundred\+Won}}
+\index{set\+R\+\_\+one\+Hundred\+Won@{set\+R\+\_\+one\+Hundred\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{set\+R\+\_\+one\+Hundred\+Won(int r\+\_\+one\+Hundred\+Won)}{setR_oneHundredWon(int r_oneHundredWon)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vending\+Machine.\+Change.\+set\+R\+\_\+one\+Hundred\+Won (
+\begin{DoxyParamCaption}
+\item[{int}]{r\+\_\+one\+Hundred\+Won}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_a39efaf418a391d62174308b843ac6dd8}{}\label{class_vending_machine_1_1_change_a39efaf418a391d62174308b843ac6dd8}
+
+
+Change.\+java 파일의 58 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+58                                                         \{
+59         \hyperlink{class_vending_machine_1_1_change_a03ee38bdf926f63d3d537d54b6dd6c85}{R\_oneHundredWon} = r\_oneHundredWon;
+60     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!set\+R\+\_\+one\+Thousand\+Won@{set\+R\+\_\+one\+Thousand\+Won}}
+\index{set\+R\+\_\+one\+Thousand\+Won@{set\+R\+\_\+one\+Thousand\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{set\+R\+\_\+one\+Thousand\+Won(int r\+\_\+one\+Thousand\+Won)}{setR_oneThousandWon(int r_oneThousandWon)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vending\+Machine.\+Change.\+set\+R\+\_\+one\+Thousand\+Won (
+\begin{DoxyParamCaption}
+\item[{int}]{r\+\_\+one\+Thousand\+Won}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_a37f3b2d778d33f32aff10e8985175b4b}{}\label{class_vending_machine_1_1_change_a37f3b2d778d33f32aff10e8985175b4b}
+
+
+Change.\+java 파일의 74 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+74                                                           \{
+75         \hyperlink{class_vending_machine_1_1_change_aedcf39060a7c95aa27cce2d74853a16a}{R\_oneThousandWon} = r\_oneThousandWon;
+76     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!set\+R\+\_\+ten\+Won@{set\+R\+\_\+ten\+Won}}
+\index{set\+R\+\_\+ten\+Won@{set\+R\+\_\+ten\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{set\+R\+\_\+ten\+Won(int r\+\_\+ten\+Won)}{setR_tenWon(int r_tenWon)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vending\+Machine.\+Change.\+set\+R\+\_\+ten\+Won (
+\begin{DoxyParamCaption}
+\item[{int}]{r\+\_\+ten\+Won}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_acb2664b80fd5564b3add62845ee0afc5}{}\label{class_vending_machine_1_1_change_acb2664b80fd5564b3add62845ee0afc5}
+
+
+Change.\+java 파일의 42 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+42                                           \{
+43         \hyperlink{class_vending_machine_1_1_change_ade66d07bd5a80d7ea0dfc34704714243}{R\_tenWon} = r\_tenWon;
+44     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!set\+Ten\+Won@{set\+Ten\+Won}}
+\index{set\+Ten\+Won@{set\+Ten\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{set\+Ten\+Won(int ten\+Won)}{setTenWon(int tenWon)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vending\+Machine.\+Change.\+set\+Ten\+Won (
+\begin{DoxyParamCaption}
+\item[{int}]{ten\+Won}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_a3fb3cf3b5c93c3c52fbc7d9c6a43af00}{}\label{class_vending_machine_1_1_change_a3fb3cf3b5c93c3c52fbc7d9c6a43af00}
+
+
+Change.\+java 파일의 83 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Change.\+ten\+Won.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+83                                       \{
+84         this.\hyperlink{class_vending_machine_1_1_change_a0c9fe365f26d478fc07e1bb9828cfcc7}{tenWon} = \hyperlink{class_vending_machine_1_1_change_a0c9fe365f26d478fc07e1bb9828cfcc7}{tenWon};
+85     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!settotal@{settotal}}
+\index{settotal@{settotal}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{settotal(int total)}{settotal(int total)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vending\+Machine.\+Change.\+settotal (
+\begin{DoxyParamCaption}
+\item[{int}]{total}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_change_a400cce1d214d8e70ae8018aaaa8b1794}{}\label{class_vending_machine_1_1_change_a400cce1d214d8e70ae8018aaaa8b1794}
+
+
+Change.\+java 파일의 124 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Change.\+total.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+125     \{
+126         this.\hyperlink{class_vending_machine_1_1_change_aaa54155607801f52da0a520ef638e51d}{total} = \hyperlink{class_vending_machine_1_1_change_aaa54155607801f52da0a520ef638e51d}{total};
+127     \}
+\end{DoxyCode}
+
+
+\subsection{멤버 데이타 문서화}
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!fifty\+Won@{fifty\+Won}}
+\index{fifty\+Won@{fifty\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{fifty\+Won}{fiftyWon}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+fifty\+Won\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_change_a7559b56180084c477b10aebae956e13f}{}\label{class_vending_machine_1_1_change_a7559b56180084c477b10aebae956e13f}
+
+
+Change.\+java 파일의 16 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Change.\+get\+Fifty\+Won(), Vending\+Machine.\+Change.\+set\+Fifty\+Won().
+
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!five\+Hundred\+Won@{five\+Hundred\+Won}}
+\index{five\+Hundred\+Won@{five\+Hundred\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{five\+Hundred\+Won}{fiveHundredWon}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+five\+Hundred\+Won\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_change_a83d616c8b0b5c5b560edaeb06d2e3dc0}{}\label{class_vending_machine_1_1_change_a83d616c8b0b5c5b560edaeb06d2e3dc0}
+
+
+Change.\+java 파일의 18 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Change.\+get\+Five\+Hundred\+Won(), Vending\+Machine.\+Change.\+set\+Five\+Hundred\+Won().
+
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!one\+Hundred\+Won@{one\+Hundred\+Won}}
+\index{one\+Hundred\+Won@{one\+Hundred\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{one\+Hundred\+Won}{oneHundredWon}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+one\+Hundred\+Won\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_change_a82f462b3cad2218fb4c8ca15f4915374}{}\label{class_vending_machine_1_1_change_a82f462b3cad2218fb4c8ca15f4915374}
+
+
+Change.\+java 파일의 17 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Change.\+get\+One\+Hundred\+Won(), Vending\+Machine.\+Change.\+set\+One\+Hundred\+Won().
+
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!one\+Thousand\+Won@{one\+Thousand\+Won}}
+\index{one\+Thousand\+Won@{one\+Thousand\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{one\+Thousand\+Won}{oneThousandWon}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+one\+Thousand\+Won\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_change_a949998e6d45fdaa880ebfa7ae2e06240}{}\label{class_vending_machine_1_1_change_a949998e6d45fdaa880ebfa7ae2e06240}
+
+
+Change.\+java 파일의 19 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Change.\+get\+One\+Thousand\+Won().
+
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!R\+\_\+fifty\+Won@{R\+\_\+fifty\+Won}}
+\index{R\+\_\+fifty\+Won@{R\+\_\+fifty\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{R\+\_\+fifty\+Won}{R_fiftyWon}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+R\+\_\+fifty\+Won\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_change_a4e21e933b5ee7b25ebb7318af485de4e}{}\label{class_vending_machine_1_1_change_a4e21e933b5ee7b25ebb7318af485de4e}
+
+
+Change.\+java 파일의 21 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Change.\+get\+R\+\_\+fifty\+Won(), Vending\+Machine.\+Change.\+refund().
+
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!R\+\_\+five\+Hundred\+Won@{R\+\_\+five\+Hundred\+Won}}
+\index{R\+\_\+five\+Hundred\+Won@{R\+\_\+five\+Hundred\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{R\+\_\+five\+Hundred\+Won}{R_fiveHundredWon}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+R\+\_\+five\+Hundred\+Won\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_change_a37aebab952ad10a6c3a97d525eb20012}{}\label{class_vending_machine_1_1_change_a37aebab952ad10a6c3a97d525eb20012}
+
+
+Change.\+java 파일의 23 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Change.\+get\+R\+\_\+five\+Hundred\+Won(), Vending\+Machine.\+Change.\+refund().
+
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!R\+\_\+one\+Hundred\+Won@{R\+\_\+one\+Hundred\+Won}}
+\index{R\+\_\+one\+Hundred\+Won@{R\+\_\+one\+Hundred\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{R\+\_\+one\+Hundred\+Won}{R_oneHundredWon}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+R\+\_\+one\+Hundred\+Won\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_change_a03ee38bdf926f63d3d537d54b6dd6c85}{}\label{class_vending_machine_1_1_change_a03ee38bdf926f63d3d537d54b6dd6c85}
+
+
+Change.\+java 파일의 22 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Change.\+get\+R\+\_\+one\+Hundred\+Won(), Vending\+Machine.\+Change.\+refund().
+
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!R\+\_\+one\+Thousand\+Won@{R\+\_\+one\+Thousand\+Won}}
+\index{R\+\_\+one\+Thousand\+Won@{R\+\_\+one\+Thousand\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{R\+\_\+one\+Thousand\+Won}{R_oneThousandWon}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+R\+\_\+one\+Thousand\+Won\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_change_aedcf39060a7c95aa27cce2d74853a16a}{}\label{class_vending_machine_1_1_change_aedcf39060a7c95aa27cce2d74853a16a}
+
+
+Change.\+java 파일의 24 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Change.\+get\+R\+\_\+one\+Thousand\+Won(), Vending\+Machine.\+Change.\+refund().
+
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!R\+\_\+ten\+Won@{R\+\_\+ten\+Won}}
+\index{R\+\_\+ten\+Won@{R\+\_\+ten\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{R\+\_\+ten\+Won}{R_tenWon}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+R\+\_\+ten\+Won\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_change_ade66d07bd5a80d7ea0dfc34704714243}{}\label{class_vending_machine_1_1_change_ade66d07bd5a80d7ea0dfc34704714243}
+
+
+Change.\+java 파일의 20 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Change.\+get\+R\+\_\+ten\+Won(), Vending\+Machine.\+Change.\+refund().
+
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!ten\+Won@{ten\+Won}}
+\index{ten\+Won@{ten\+Won}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{ten\+Won}{tenWon}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+ten\+Won\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_change_a0c9fe365f26d478fc07e1bb9828cfcc7}{}\label{class_vending_machine_1_1_change_a0c9fe365f26d478fc07e1bb9828cfcc7}
+
+
+Change.\+java 파일의 15 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Change.\+get\+Ten\+Won(), Vending\+Machine.\+Change.\+set\+Ten\+Won().
+
+\index{Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}!total@{total}}
+\index{total@{total}!Vending\+Machine\+::\+Change@{Vending\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{total}{total}}]{\setlength{\rightskip}{0pt plus 5cm}int Vending\+Machine.\+Change.\+total\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_change_aaa54155607801f52da0a520ef638e51d}{}\label{class_vending_machine_1_1_change_aaa54155607801f52da0a520ef638e51d}
+
+
+Change.\+java 파일의 26 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Change.\+gettotal(), Vending\+Machine.\+Change.\+settotal().
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/pub/workspace/\+S\+Eproject1/src/\+Vending\+Machine/\hyperlink{_change_8java}{Change.\+java}\end{DoxyCompactItemize}

@@ -1,0 +1,843 @@
+\hypertarget{class_vending_machine_1_1_machine_u_i}{}\section{Vending\+Machine.\+Machine\+UI 클래스 참조}
+\label{class_vending_machine_1_1_machine_u_i}\index{Vending\+Machine.\+Machine\+UI@{Vending\+Machine.\+Machine\+UI}}
+
+
+\hyperlink{class_vending_machine_1_1_machine_u_i}{Machine\+UI}, main class.  
+
+
+
+
+Vending\+Machine.\+Machine\+U\+I에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Vending\+Machine.\+Machine\+U\+I에 대한 협력 다이어그램\+:
+% FIG 1
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vending_machine_1_1_machine_u_i_a3c614e330b9975abf0909d61b694f8d9}{Machine\+UI} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{namespace_vending_machine}{Vending\+Machine} U\+I의 제목을 만들어주고 글꼴도 바꿔줌 images폴더를 만들어 음료수 사진들 저장 set\+Bounds, set\+Icon 등을 이용해 음료수 그림을 붙여넣고 위치를 설정해줌 \end{DoxyCompactList}\item 
+void \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase} (String cmd)
+\begin{DoxyCompactList}\small\item\em 자판기의 모든 역할이 담긴 핵심 함수 \end{DoxyCompactList}\item 
+void \hyperlink{class_vending_machine_1_1_machine_u_i_a737e9b912652fdd8ed7824f12992d1bf}{error} (String msg)
+\begin{DoxyCompactList}\small\item\em 에러가 있을 때 경고창을 띄우고 메세지를 나타내기위한 함수 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_vending_machine_1_1_machine_u_i_a67854fcd3cbbd79f6c2076fc25f73f42}{main} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+\subsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+J\+Panel \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{content\+Pane}
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+\hyperlink{class_vending_machine_1_1_machine_u_i}{Machine\+UI}, main class. 
+
+\begin{DoxyAuthor}{작성자}
+Kyung Shin Yoon 
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{할일}
+\item[\hyperlink{todo__todo000001}{할일}]windowbuilder를 통해 \hyperlink{namespace_vending_machine}{Vending\+Machine} U\+I를 만들고 버튼을 클릭함에따라 수행해야 하는 함수들을 모두 구현 \end{DoxyRefDesc}
+\begin{DoxyDate}{날짜}
+April 11,2016 
+\end{DoxyDate}
+
+
+Machine\+U\+I.\+java 파일의 26 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{생성자 \& 소멸자 문서화}
+\index{Vending\+Machine\+::\+Machine\+UI@{Vending\+Machine\+::\+Machine\+UI}!Machine\+UI@{Machine\+UI}}
+\index{Machine\+UI@{Machine\+UI}!Vending\+Machine\+::\+Machine\+UI@{Vending\+Machine\+::\+Machine\+UI}}
+\subsubsection[{\texorpdfstring{Machine\+U\+I()}{MachineUI()}}]{\setlength{\rightskip}{0pt plus 5cm}Vending\+Machine.\+Machine\+U\+I.\+Machine\+UI (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_machine_u_i_a3c614e330b9975abf0909d61b694f8d9}{}\label{class_vending_machine_1_1_machine_u_i_a3c614e330b9975abf0909d61b694f8d9}
+
+
+\hyperlink{namespace_vending_machine}{Vending\+Machine} U\+I의 제목을 만들어주고 글꼴도 바꿔줌 images폴더를 만들어 음료수 사진들 저장 set\+Bounds, set\+Icon 등을 이용해 음료수 그림을 붙여넣고 위치를 설정해줌 
+
+Create the frame. String.\+valu\+Of함수를 사용하여 J\+Label에 인자로 준 값을 넣기(라벨에 쓰기위해 int형을 string으로 바꾸어준다) 
+\begin{DoxyParams}{매개변수}
+{\em String.\+value\+Of(change.\+gettotal())} & \+: 투입한 금액의 값 \\
+\hline
+{\em String.\+value\+Of(change.\+get\+One\+Thousand\+Won())} & \+: 1000원의 재고 $\sim$ 10원재고까지 라벨의 id.\+set\+Text함수를 사용하여 purchase함수 수행후에 계산된 돈의 재고값과 투입금액의 변화를 라벨에 나타내준다\\
+\hline
+\end{DoxyParams}
+음료수를 클릭 했을 때 음료수들의 재고와 판매량 변화와 투입금액의 변화를 set\+Text로 나타냄
+
+음료수 재고 채우기
+
+돈의 재고 채우기
+
+Machine\+U\+I.\+java 파일의 53 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Change.\+get\+Fifty\+Won(), Vending\+Machine.\+Change.\+get\+Five\+Hundred\+Won(), Vending\+Machine.\+Product.\+get\+Num\+Of\+Purchased(), Vending\+Machine.\+Product.\+getnum\+Of\+Stock(), Vending\+Machine.\+Change.\+get\+One\+Hundred\+Won(), Vending\+Machine.\+Change.\+get\+One\+Thousand\+Won(), Vending\+Machine.\+Change.\+get\+Ten\+Won(), Vending\+Machine.\+Change.\+gettotal(), Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+main().
+
+
+\begin{DoxyCode}
+53                        \{
+54         setDefaultCloseOperation(JFrame.EXIT\_ON\_CLOSE);
+55         setBounds(100, 100, 610, 600);
+56         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane} = \textcolor{keyword}{new} JPanel();
+57         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.setBorder(\textcolor{keyword}{new} EmptyBorder(5, 5, 5, 5));
+58         setContentPane(\hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane});
+59         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.setLayout(null);
+60         
+61         JPanel panel = \textcolor{keyword}{new} JPanel();
+62         panel.setBackground(Color.PINK);
+63         panel.setBounds(0, 0, 592, 41);
+64         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(panel);
+65         
+66         JLabel label = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"Yoon's Luxury VendingMachine"});
+67         label.setForeground(Color.WHITE);
+68         label.setHorizontalAlignment(SwingConstants.CENTER);
+69         label.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"HY크리스탈M"}, Font.PLAIN, 17));
+70         panel.add(label);
+71         
+72         JLabel lblNewLabel = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"New label"});
+73         lblNewLabel.setIcon(\textcolor{keyword}{new} ImageIcon(\textcolor{stringliteral}{"images/cola.png"}));
+74         lblNewLabel.setBounds(14, 45, 85, 136);
+75         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(lblNewLabel);
+76         
+77         JLabel lblNewLabel\_1 = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"New label"});
+78         lblNewLabel\_1.setIcon(\textcolor{keyword}{new} ImageIcon(\textcolor{stringliteral}{"images/cider.png"}));
+79         lblNewLabel\_1.setBounds(135, 45, 85, 136);
+80         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(lblNewLabel\_1);
+81         
+82         JLabel lblNewLabel\_2 = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"New label"});
+83         lblNewLabel\_2.setIcon(\textcolor{keyword}{new} ImageIcon(\textcolor{stringliteral}{"images/water.jpg"}));
+84         lblNewLabel\_2.setBounds(260, 45, 60, 136);
+85         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(lblNewLabel\_2);
+86         
+87         JLabel lblNewLabel\_3 = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"New label"});
+88         lblNewLabel\_3.setIcon(\textcolor{keyword}{new} ImageIcon(\textcolor{stringliteral}{"images/sikhye.png"}));
+89         lblNewLabel\_3.setBounds(356, 45, 85, 136);
+90         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(lblNewLabel\_3);
+91         
+92         JLabel lblNewLabel\_4 = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"New label"});
+93         lblNewLabel\_4.setIcon(\textcolor{keyword}{new} ImageIcon(\textcolor{stringliteral}{"images/letsbe.png"}));
+94         lblNewLabel\_4.setBounds(479, 45, 81, 136);
+95         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(lblNewLabel\_4);  
+96         
+103         JLabel lblNewLabel\_10 = \textcolor{keyword}{new} JLabel(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}())); \textcolor{comment}{//투입금액}
+104         lblNewLabel\_10.setBounds(344, 506, 62, 18);
+105         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(lblNewLabel\_10);     
+106         
+107         JLabel lblNewLabel\_11 = \textcolor{keyword}{new} JLabel(String.valueOf(change.
+      \hyperlink{class_vending_machine_1_1_change_a4207ff32f227afb89076b87a3812cf2e}{getOneThousandWon}()));
+108         lblNewLabel\_11.setBounds(59, 406, 44, 14);
+109         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(lblNewLabel\_11);
+110         
+111         JButton btnNewButton = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"1000원넣기"}); \textcolor{comment}{//1000원 넣기}
+112         btnNewButton.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+113             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+114                 \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase}(e.getActionCommand());
+115                 lblNewLabel\_11.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a4207ff32f227afb89076b87a3812cf2e}{getOneThousandWon}()));
+116                 lblNewLabel\_10.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()));
+117             \}
+118         \});
+119         btnNewButton.setBounds(14, 368, 117, 27);
+120         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(btnNewButton);
+121         
+122         JLabel lblNewLabel\_12 = \textcolor{keyword}{new} JLabel(String.valueOf(change.
+      \hyperlink{class_vending_machine_1_1_change_afa26632165b427a19133f182996587a3}{getFiveHundredWon}()));
+123         lblNewLabel\_12.setBounds(183, 402, 37, 18);
+124         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(lblNewLabel\_12);
+125         
+126         JButton btnNewButton\_1 = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"500원넣기"}); \textcolor{comment}{//500원 넣기}
+127         btnNewButton\_1.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+128             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+129                 \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase}(e.getActionCommand());
+130                 lblNewLabel\_12.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_afa26632165b427a19133f182996587a3}{getFiveHundredWon}()));
+131                 lblNewLabel\_10.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()));
+132 
+133             \}
+134         \});
+135         btnNewButton\_1.setBounds(135, 368, 111, 27);
+136         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(btnNewButton\_1);
+137         
+138         JLabel lblNewLabel\_13 = \textcolor{keyword}{new} JLabel(String.valueOf(change.
+      \hyperlink{class_vending_machine_1_1_change_ac814aaff5cfe37b1a71899f750f4d99e}{getOneHundredWon}()));
+139         lblNewLabel\_13.setBounds(302, 402, 38, 18);
+140         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(lblNewLabel\_13);
+141         
+142         JButton btnNewButton\_2 = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"100원넣기"}); \textcolor{comment}{//100원넣기}
+143         btnNewButton\_2.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+144             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+145                 \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase}(e.getActionCommand());
+146                 lblNewLabel\_13.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_ac814aaff5cfe37b1a71899f750f4d99e}{getOneHundredWon}()));
+147                 lblNewLabel\_10.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()));
+148 
+149             \}
+150         \});
+151         btnNewButton\_2.setBounds(253, 368, 111, 27);
+152         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(btnNewButton\_2);
+153         
+154         JLabel lblNewLabel\_14 = \textcolor{keyword}{new} JLabel(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a1ef85014ae005316e4a39db49e8364a7}{getFiftyWon}()));
+155         lblNewLabel\_14.setBounds(411, 402, 48, 18);
+156         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(lblNewLabel\_14);
+157         
+158         JButton button\_1 = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"50원넣기"}); \textcolor{comment}{//50원넣기}
+159         button\_1.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+160             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+161                 \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase}(e.getActionCommand());
+162                 lblNewLabel\_14.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a1ef85014ae005316e4a39db49e8364a7}{getFiftyWon}()));
+163                 lblNewLabel\_10.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()));
+164 
+165             \}
+166         \});
+167         button\_1.setBounds(370, 368, 105, 27);
+168         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(button\_1);
+169         
+170         JLabel lblNewLabel\_15 = \textcolor{keyword}{new} JLabel(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_ac6b95aa923e6727f5ecf8095b7f42e99}{getTenWon}()));
+171         lblNewLabel\_15.setBounds(523, 402, 37, 18);
+172         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(lblNewLabel\_15);     
+173 
+174         JButton btnNewButton\_3 = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"10원넣기"}); \textcolor{comment}{//10원넣기}
+175         btnNewButton\_3.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+176             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+177                 \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase}(e.getActionCommand());
+178                 lblNewLabel\_15.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_ac6b95aa923e6727f5ecf8095b7f42e99}{getTenWon}()));
+179                 lblNewLabel\_10.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()));
+180 
+181             \}
+182         \});
+183         btnNewButton\_3.setBounds(479, 368, 105, 27);
+184         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(btnNewButton\_3);     
+185         
+186         JLabel label\_5 = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"투입금액 :"});
+187         label\_5.setBounds(255, 506, 85, 18);
+188         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(label\_5);
+189         
+193         JLabel lblNewLabel\_5 = \textcolor{keyword}{new} JLabel(String.valueOf(machine.cola.
+      \hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}())); \textcolor{comment}{//콜라 재고}
+194         lblNewLabel\_5.setBounds(55, 232, 36, 18);
+195         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(lblNewLabel\_5);      
+196         
+197         JLabel lblNewLabel\_16 = \textcolor{keyword}{new} JLabel(String.valueOf(machine.cola.
+      \hyperlink{class_vending_machine_1_1_product_aefa8a5881c5569171a8cf1161b4bd911}{getNumOfPurchased}())); \textcolor{comment}{//콜라 판매량}
+198         lblNewLabel\_16.setBounds(60, 253, 37, 18);
+199         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(lblNewLabel\_16);
+200         
+201         JButton btnNewButton\_4 = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"콜라"}); \textcolor{comment}{//콜라}
+202         btnNewButton\_4.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+203             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+204                 \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase}(arg0.getActionCommand());
+205                 lblNewLabel\_5.setText(String.valueOf(machine.cola.\hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}()));
+206                 lblNewLabel\_16.setText(String.valueOf(machine.cola.
+      \hyperlink{class_vending_machine_1_1_product_aefa8a5881c5569171a8cf1161b4bd911}{getNumOfPurchased}()));
+207                 lblNewLabel\_10.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()));
+208             \}
+209         \});
+210         btnNewButton\_4.setBounds(14, 193, 85, 27);
+211         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(btnNewButton\_4);
+212                 
+213         JLabel lblNewLabel\_6 = \textcolor{keyword}{new} JLabel(String.valueOf(machine.cider.
+      \hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}())); \textcolor{comment}{//사이다 재고}
+214         lblNewLabel\_6.setBounds(169, 232, 37, 18);
+215         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(lblNewLabel\_6);      
+216         
+217         JLabel label\_1 = \textcolor{keyword}{new} JLabel(String.valueOf(machine.cider.
+      \hyperlink{class_vending_machine_1_1_product_aefa8a5881c5569171a8cf1161b4bd911}{getNumOfPurchased}())); \textcolor{comment}{//사이다 판매량}
+218         label\_1.setBounds(175, 252, 37, 18);
+219         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(label\_1);
+220 
+221         JButton btnNewButton\_5 = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"사이다"}); \textcolor{comment}{//사이다}
+222         btnNewButton\_5.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+223             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+224                 \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase}(arg0.getActionCommand());
+225                 lblNewLabel\_6.setText(String.valueOf(machine.cider.\hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}()));
+226                 label\_1.setText(String.valueOf(machine.cider.\hyperlink{class_vending_machine_1_1_product_aefa8a5881c5569171a8cf1161b4bd911}{getNumOfPurchased}()));
+227                 lblNewLabel\_10.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()));
+228             \}
+229         \});
+230         btnNewButton\_5.setBounds(135, 193, 85, 27);
+231         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(btnNewButton\_5);
+232         
+233         JLabel lblNewLabel\_7 = \textcolor{keyword}{new} JLabel(String.valueOf(machine.water.
+      \hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}())); \textcolor{comment}{//물 재고}
+234         lblNewLabel\_7.setBounds(277, 231, 26, 18);
+235         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(lblNewLabel\_7);      
+236                 
+237         JLabel label\_2 = \textcolor{keyword}{new} JLabel(String.valueOf(machine.water.
+      \hyperlink{class_vending_machine_1_1_product_aefa8a5881c5569171a8cf1161b4bd911}{getNumOfPurchased}())); \textcolor{comment}{//물 판매량}
+238         label\_2.setBounds(282, 252, 36, 18);
+239         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(label\_2);
+240         
+241         JButton btnNewButton\_6 = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"물"}); \textcolor{comment}{//물}
+242         btnNewButton\_6.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+243             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+244                 \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase}(arg0.getActionCommand());
+245                 lblNewLabel\_7.setText(String.valueOf(machine.water.\hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}()));
+246                 label\_2.setText(String.valueOf(machine.water.\hyperlink{class_vending_machine_1_1_product_aefa8a5881c5569171a8cf1161b4bd911}{getNumOfPurchased}()));
+247                 lblNewLabel\_10.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()));
+248             \}
+249         \});
+250         btnNewButton\_6.setBounds(256, 193, 60, 27);
+251         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(btnNewButton\_6);
+252         
+253         JLabel lblNewLabel\_8 = \textcolor{keyword}{new} JLabel(String.valueOf(machine.sikhye.
+      \hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}())); \textcolor{comment}{//식혜 재고}
+254         lblNewLabel\_8.setBounds(390, 231, 20, 18);
+255         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(lblNewLabel\_8);
+256         
+257         JLabel label\_3 = \textcolor{keyword}{new} JLabel(String.valueOf(machine.sikhye.
+      \hyperlink{class_vending_machine_1_1_product_aefa8a5881c5569171a8cf1161b4bd911}{getNumOfPurchased}())); \textcolor{comment}{//식혜 판매량}
+258         label\_3.setBounds(395, 249, 32, 18);
+259         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(label\_3);        
+260         
+261         JButton btnNewButton\_7 = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"식혜"}); \textcolor{comment}{//식혜}
+262         btnNewButton\_7.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+263             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+264                 \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase}(arg0.getActionCommand());
+265                 lblNewLabel\_8.setText(String.valueOf(machine.sikhye.
+      \hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}()));
+266                 label\_3.setText(String.valueOf(machine.sikhye.\hyperlink{class_vending_machine_1_1_product_aefa8a5881c5569171a8cf1161b4bd911}{getNumOfPurchased}()));
+267                 lblNewLabel\_10.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()));
+268             \}
+269         \});
+270         btnNewButton\_7.setBounds(356, 193, 85, 27);
+271         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(btnNewButton\_7);
+272         
+273         JLabel lblNewLabel\_9 = \textcolor{keyword}{new} JLabel(String.valueOf(machine.letsbe.
+      \hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}())); \textcolor{comment}{//레츠비 재고}
+274         lblNewLabel\_9.setBounds(507, 231, 26, 18);
+275         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(lblNewLabel\_9);      
+276         
+277         JLabel label\_4 = \textcolor{keyword}{new} JLabel(String.valueOf(machine.letsbe.
+      \hyperlink{class_vending_machine_1_1_product_aefa8a5881c5569171a8cf1161b4bd911}{getNumOfPurchased}())); \textcolor{comment}{//레츠비 판매량}
+278         label\_4.setBounds(512, 253, 26, 18);
+279         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(label\_4);                
+280 
+281         JButton btnNewButton\_8 = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"레츠비"});\textcolor{comment}{//레츠비}
+282         btnNewButton\_8.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+283             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg4) \{
+284                 \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase}(arg4.getActionCommand());
+285                 lblNewLabel\_9.setText(String.valueOf(machine.letsbe.
+      \hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}()));
+286                 label\_4.setText(String.valueOf(machine.letsbe.\hyperlink{class_vending_machine_1_1_product_aefa8a5881c5569171a8cf1161b4bd911}{getNumOfPurchased}()));
+287                 lblNewLabel\_10.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()));
+288             \}
+289         \});
+290         btnNewButton\_8.setBounds(469, 193, 105, 27);
+291         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(btnNewButton\_8);
+292     
+296         JButton btnNewButton\_9 = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"콜라채우기"});
+297         btnNewButton\_9.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+298             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+299                 \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase}(arg0.getActionCommand());
+300                 lblNewLabel\_5.setText(String.valueOf(machine.cola.\hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}()));
+301             \}
+302         \});
+303         btnNewButton\_9.setBounds(6, 311, 113, 27);
+304         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(btnNewButton\_9);
+305         
+306         JButton btnNewButton\_10 = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"사이다채우기"});
+307         btnNewButton\_10.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+308             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+309                 \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase}(arg0.getActionCommand());
+310                 lblNewLabel\_6.setText(String.valueOf(machine.cider.\hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}()));
+311             \}
+312         \});
+313         btnNewButton\_10.setBounds(125, 311, 117, 27);
+314         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(btnNewButton\_10);
+315         
+316         JButton btnNewButton\_11 = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"물채우기"});
+317         btnNewButton\_11.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+318             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+319                 \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase}(arg0.getActionCommand());
+320                 lblNewLabel\_7.setText(String.valueOf(machine.water.\hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}()));
+321             \}
+322         \});
+323         btnNewButton\_11.setBounds(246, 311, 111, 27);
+324         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(btnNewButton\_11);
+325         
+326         JButton btnNewButton\_12 = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"식혜채우기"});
+327         btnNewButton\_12.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+328             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+329                 \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase}(arg0.getActionCommand());
+330                 lblNewLabel\_8.setText(String.valueOf(machine.sikhye.
+      \hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}()));
+331             \}
+332         \});
+333         btnNewButton\_12.setBounds(360, 311, 105, 27);
+334         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(btnNewButton\_12);
+335         
+336         JButton btnNewButton\_13 = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"레츠비채우기"});
+337         btnNewButton\_13.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+338             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+339                 \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase}(arg0.getActionCommand());
+340                 lblNewLabel\_9.setText(String.valueOf(machine.letsbe.
+      \hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}()));
+341             \}
+342         \});
+343         btnNewButton\_13.setBounds(469, 311, 117, 27);
+344         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(btnNewButton\_13);
+345         
+346         JButton button = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"잔돈반환"}); \textcolor{comment}{//잔돈반환}
+347         button.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+348             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+349                 \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase}(e.getActionCommand());
+350                 lblNewLabel\_10.setText(\textcolor{stringliteral}{"0"});
+351                 lblNewLabel\_11.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a4207ff32f227afb89076b87a3812cf2e}{getOneThousandWon}()));
+352                 lblNewLabel\_12.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_afa26632165b427a19133f182996587a3}{getFiveHundredWon}()));
+353                 lblNewLabel\_13.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_ac814aaff5cfe37b1a71899f750f4d99e}{getOneHundredWon}()));
+354                 lblNewLabel\_14.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a1ef85014ae005316e4a39db49e8364a7}{getFiftyWon}()));
+355                 lblNewLabel\_15.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_ac6b95aa923e6727f5ecf8095b7f42e99}{getTenWon}()));
+356             \}
+357         \});
+358         button.setBounds(443, 502, 117, 27);
+359         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(button);
+360         
+364         JButton button\_2 = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"1000원채움"});
+365         button\_2.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+366             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+367                 \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase}(e.getActionCommand());
+368                 lblNewLabel\_11.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a4207ff32f227afb89076b87a3812cf2e}{getOneThousandWon}()));
+369             \}
+370         \});
+371         button\_2.setBounds(14, 430, 117, 27);
+372         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(button\_2);
+373         
+374         JButton button\_3 = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"500원채움"});
+375         button\_3.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+376             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+377                 \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase}(arg0.getActionCommand());
+378                 lblNewLabel\_12.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_afa26632165b427a19133f182996587a3}{getFiveHundredWon}()));    
+379             \}
+380         \});
+381         button\_3.setBounds(135, 430, 111, 27);
+382         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(button\_3);
+383         
+384         JButton button\_4 = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"100원채움"});
+385         button\_4.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+386             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+387                 \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase}(e.getActionCommand());
+388                 lblNewLabel\_13.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_ac814aaff5cfe37b1a71899f750f4d99e}{getOneHundredWon}()));
+389             \}
+390         \});
+391         button\_4.setBounds(253, 430, 111, 27);
+392         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(button\_4);
+393         
+394         JButton button\_5 = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"50원채움"});
+395         button\_5.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+396             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+397                 \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase}(e.getActionCommand());
+398                 lblNewLabel\_14.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a1ef85014ae005316e4a39db49e8364a7}{getFiftyWon}()));
+399             \}
+400         \});
+401         button\_5.setBounds(370, 430, 105, 27);
+402         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(button\_5);
+403         
+404         JButton button\_6 = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"10원채움"});
+405         button\_6.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+406             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+407                 \hyperlink{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{purchase}(e.getActionCommand());
+408                 lblNewLabel\_15.setText(String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_ac6b95aa923e6727f5ecf8095b7f42e99}{getTenWon}()));
+409             \}
+410         \});
+411         button\_6.setBounds(479, 430, 105, 27);
+412         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(button\_6);
+413         
+414         JLabel lblNewLabel\_17 = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"재고 :"});
+415         lblNewLabel\_17.setBounds(0, 232, 52, 18);
+416         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(lblNewLabel\_17);
+417         
+418         JLabel lblNewLabel\_18 = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"판매량 :"});
+419         lblNewLabel\_18.setBounds(-1, 255, 52, 18);
+420         \hyperlink{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{contentPane}.add(lblNewLabel\_18);
+421     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+
+
+
+
+\subsection{멤버 함수 문서화}
+\index{Vending\+Machine\+::\+Machine\+UI@{Vending\+Machine\+::\+Machine\+UI}!error@{error}}
+\index{error@{error}!Vending\+Machine\+::\+Machine\+UI@{Vending\+Machine\+::\+Machine\+UI}}
+\subsubsection[{\texorpdfstring{error(\+String msg)}{error(String msg)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vending\+Machine.\+Machine\+U\+I.\+error (
+\begin{DoxyParamCaption}
+\item[{String}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_machine_u_i_a737e9b912652fdd8ed7824f12992d1bf}{}\label{class_vending_machine_1_1_machine_u_i_a737e9b912652fdd8ed7824f12992d1bf}
+
+
+에러가 있을 때 경고창을 띄우고 메세지를 나타내기위한 함수 
+
+
+\begin{DoxyParams}{매개변수}
+{\em msg} & \+: 경고창을 출력하기 위한 string 변수 \\
+\hline
+\end{DoxyParams}
+
+
+Machine\+U\+I.\+java 파일의 666 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+purchase().
+
+
+\begin{DoxyCode}
+666                                   \{ \textcolor{comment}{// 경고창을 출력하는 메소드}
+667         JOptionPane.showMessageDialog(null, msg, \textcolor{stringliteral}{"경고"}, 
+668                 JOptionPane.INFORMATION\_MESSAGE);
+669         \textcolor{keywordflow}{return};
+670     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Machine\+UI@{Vending\+Machine\+::\+Machine\+UI}!main@{main}}
+\index{main@{main}!Vending\+Machine\+::\+Machine\+UI@{Vending\+Machine\+::\+Machine\+UI}}
+\subsubsection[{\texorpdfstring{main(\+String[] args)}{main(String[] args)}}]{\setlength{\rightskip}{0pt plus 5cm}static void Vending\+Machine.\+Machine\+U\+I.\+main (
+\begin{DoxyParamCaption}
+\item[{String\mbox{[}$\,$\mbox{]}}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_vending_machine_1_1_machine_u_i_a67854fcd3cbbd79f6c2076fc25f73f42}{}\label{class_vending_machine_1_1_machine_u_i_a67854fcd3cbbd79f6c2076fc25f73f42}
+Launch the application. 
+
+Machine\+U\+I.\+java 파일의 36 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Machine\+U\+I.\+Machine\+U\+I().
+
+
+\begin{DoxyCode}
+36                                            \{
+37         EventQueue.invokeLater(\textcolor{keyword}{new} Runnable() \{
+38             \textcolor{keyword}{public} \textcolor{keywordtype}{void} run() \{
+39                 \textcolor{keywordflow}{try} \{
+40                     \hyperlink{class_vending_machine_1_1_machine_u_i_a3c614e330b9975abf0909d61b694f8d9}{MachineUI} frame = \textcolor{keyword}{new} \hyperlink{class_vending_machine_1_1_machine_u_i_a3c614e330b9975abf0909d61b694f8d9}{MachineUI}();
+41                     frame.setVisible(\textcolor{keyword}{true});
+42                 \} \textcolor{keywordflow}{catch} (Exception e) \{
+43                     e.printStackTrace();
+44                 \}
+45             \}
+46         \});     
+47     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+
+
+\index{Vending\+Machine\+::\+Machine\+UI@{Vending\+Machine\+::\+Machine\+UI}!purchase@{purchase}}
+\index{purchase@{purchase}!Vending\+Machine\+::\+Machine\+UI@{Vending\+Machine\+::\+Machine\+UI}}
+\subsubsection[{\texorpdfstring{purchase(\+String cmd)}{purchase(String cmd)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vending\+Machine.\+Machine\+U\+I.\+purchase (
+\begin{DoxyParamCaption}
+\item[{String}]{cmd}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}{}\label{class_vending_machine_1_1_machine_u_i_aadccf593dc69281c9ebbfe1fbe09b804}
+
+
+자판기의 모든 역할이 담긴 핵심 함수 
+
+
+\begin{DoxyParams}{매개변수}
+{\em cmd} & \+: 어떤 버튼인지 인식하기 위한 string 변수 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{예외}
+{\em 음료수의} & 재고가 0이되면 error를 나타내줌, 투입금액이 음료수금액보다 낮으면 error를 나타내줌 음료수의 판매량 변화, 재고관리, 금액 변화, 돈 재고관리 등 중요 역할을 모두 이 함수에서 구현 \\
+\hline
+\end{DoxyExceptions}
+
+
+Machine\+U\+I.\+java 파일의 430 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Vending\+Machine.\+Machine\+U\+I.\+error(), Vending\+Machine.\+Change.\+get\+Fifty\+Won(), Vending\+Machine.\+Change.\+get\+Five\+Hundred\+Won(), Vending\+Machine.\+Product.\+get\+Num\+Of\+Purchased(), Vending\+Machine.\+Product.\+getnum\+Of\+Stock(), Vending\+Machine.\+Change.\+get\+One\+Hundred\+Won(), Vending\+Machine.\+Change.\+get\+One\+Thousand\+Won(), Vending\+Machine.\+Product.\+get\+Price(), Vending\+Machine.\+Change.\+get\+R\+\_\+fifty\+Won(), Vending\+Machine.\+Change.\+get\+R\+\_\+five\+Hundred\+Won(), Vending\+Machine.\+Change.\+get\+R\+\_\+one\+Hundred\+Won(), Vending\+Machine.\+Change.\+get\+R\+\_\+one\+Thousand\+Won(), Vending\+Machine.\+Change.\+get\+R\+\_\+ten\+Won(), Vending\+Machine.\+Change.\+get\+Ten\+Won(), Vending\+Machine.\+Change.\+gettotal(), Vending\+Machine.\+Product.\+Is\+Empty(), Vending\+Machine.\+Product.\+Is\+Full(), Vending\+Machine.\+Change.\+refund(), Vending\+Machine.\+Change.\+set\+Fifty\+Won(), Vending\+Machine.\+Change.\+set\+Five\+Hundred\+Won(), Vending\+Machine.\+Product.\+set\+Num\+Of\+Purchased(), Vending\+Machine.\+Product.\+setnum\+Of\+Stock(), Vending\+Machine.\+Change.\+set\+One\+Hundred\+Won(), Vending\+Machine.\+Change.\+set\+One\+Thousand\+Won(), Vending\+Machine.\+Change.\+set\+Ten\+Won(), Vending\+Machine.\+Change.\+settotal().
+
+
+
+다음에 의해서 참조됨 \+:  Vending\+Machine.\+Machine\+U\+I.\+Machine\+U\+I().
+
+
+\begin{DoxyCode}
+430                                      \{ \textcolor{comment}{//모든 역할이 담긴 핵심 함수}
+431         \textcolor{keywordflow}{if}(cmd.equals(\textcolor{stringliteral}{"콜라"}))\{
+432             \textcolor{keywordflow}{if}(machine.cola.\hyperlink{class_vending_machine_1_1_product_a30a3d227efda7f0041ee4585d529ec45}{IsEmpty}())
+433             \{
+434                 \hyperlink{class_vending_machine_1_1_machine_u_i_a737e9b912652fdd8ed7824f12992d1bf}{error}(\textcolor{stringliteral}{"재고가 없습니다. 채워주세요"});
+435                 \textcolor{keywordflow}{return};
+436             \}
+437             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()<machine.cola.\hyperlink{class_vending_machine_1_1_product_abf388db99a413403b8ebad6abe8bb593}{getPrice}())
+438             \{
+439                 \hyperlink{class_vending_machine_1_1_machine_u_i_a737e9b912652fdd8ed7824f12992d1bf}{error}(\textcolor{stringliteral}{"금액이 부족합니다. 돈을 넣어주세요"});
+440                 \textcolor{keywordflow}{return};
+441             \}
+442             \textcolor{keywordflow}{else} 
+443             \{
+444                 machine.cola.\hyperlink{class_vending_machine_1_1_product_a45ff6ad466f274711d19adf7afbef20b}{setNumOfPurchased}(machine.cola.
+      \hyperlink{class_vending_machine_1_1_product_aefa8a5881c5569171a8cf1161b4bd911}{getNumOfPurchased}()+1);
+445                 machine.cola.\hyperlink{class_vending_machine_1_1_product_a09bbd37ae2e203492a3ca553adf3a8fc}{setnumOfStock}(machine.cola.
+      \hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}()-1);
+446                 change.\hyperlink{class_vending_machine_1_1_change_a400cce1d214d8e70ae8018aaaa8b1794}{settotal}(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()-machine.cola.
+      \hyperlink{class_vending_machine_1_1_product_abf388db99a413403b8ebad6abe8bb593}{getPrice}());    
+447             \}
+448         \}
+449         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmd.equals(\textcolor{stringliteral}{"사이다"}))
+450         \{
+451             \textcolor{keywordflow}{if}(machine.cider.\hyperlink{class_vending_machine_1_1_product_a30a3d227efda7f0041ee4585d529ec45}{IsEmpty}())
+452             \{
+453                 \hyperlink{class_vending_machine_1_1_machine_u_i_a737e9b912652fdd8ed7824f12992d1bf}{error}(\textcolor{stringliteral}{"재고가 없습니다. 채워주세요"});
+454                 \textcolor{keywordflow}{return};
+455             \}
+456             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()<machine.cider.\hyperlink{class_vending_machine_1_1_product_abf388db99a413403b8ebad6abe8bb593}{getPrice}())
+457             \{
+458                 \hyperlink{class_vending_machine_1_1_machine_u_i_a737e9b912652fdd8ed7824f12992d1bf}{error}(\textcolor{stringliteral}{"금액이 부족합니다. 돈을 넣어주세요"});
+459                 \textcolor{keywordflow}{return};
+460             \}
+461             \textcolor{keywordflow}{else} 
+462             \{
+463                 machine.cider.\hyperlink{class_vending_machine_1_1_product_a45ff6ad466f274711d19adf7afbef20b}{setNumOfPurchased}(machine.cider.
+      \hyperlink{class_vending_machine_1_1_product_aefa8a5881c5569171a8cf1161b4bd911}{getNumOfPurchased}()+1);
+464                 machine.cider.\hyperlink{class_vending_machine_1_1_product_a09bbd37ae2e203492a3ca553adf3a8fc}{setnumOfStock}(machine.cider.
+      \hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}()-1);
+465                 change.\hyperlink{class_vending_machine_1_1_change_a400cce1d214d8e70ae8018aaaa8b1794}{settotal}(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()-machine.cider.
+      \hyperlink{class_vending_machine_1_1_product_abf388db99a413403b8ebad6abe8bb593}{getPrice}());
+466             \}
+467         \}
+468         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmd.equals(\textcolor{stringliteral}{"물"}))
+469         \{
+470             \textcolor{keywordflow}{if}(machine.water.\hyperlink{class_vending_machine_1_1_product_a30a3d227efda7f0041ee4585d529ec45}{IsEmpty}())
+471             \{
+472                 \hyperlink{class_vending_machine_1_1_machine_u_i_a737e9b912652fdd8ed7824f12992d1bf}{error}(\textcolor{stringliteral}{"재고가 없습니다. 채워주세요"});
+473                 \textcolor{keywordflow}{return};
+474             \}
+475             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()<machine.water.\hyperlink{class_vending_machine_1_1_product_abf388db99a413403b8ebad6abe8bb593}{getPrice}())
+476             \{
+477                 \hyperlink{class_vending_machine_1_1_machine_u_i_a737e9b912652fdd8ed7824f12992d1bf}{error}(\textcolor{stringliteral}{"금액이 부족합니다. 돈을 넣어주세요"});
+478                 \textcolor{keywordflow}{return};
+479             \}
+480             \textcolor{keywordflow}{else} 
+481             \{
+482                 machine.water.\hyperlink{class_vending_machine_1_1_product_a45ff6ad466f274711d19adf7afbef20b}{setNumOfPurchased}(machine.water.
+      \hyperlink{class_vending_machine_1_1_product_aefa8a5881c5569171a8cf1161b4bd911}{getNumOfPurchased}()+1);
+483                 machine.water.\hyperlink{class_vending_machine_1_1_product_a09bbd37ae2e203492a3ca553adf3a8fc}{setnumOfStock}(machine.water.
+      \hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}()-1);
+484                 change.\hyperlink{class_vending_machine_1_1_change_a400cce1d214d8e70ae8018aaaa8b1794}{settotal}(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()-machine.water.
+      \hyperlink{class_vending_machine_1_1_product_abf388db99a413403b8ebad6abe8bb593}{getPrice}());
+485             \}
+486         \}
+487         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmd.equals(\textcolor{stringliteral}{"식혜"}))
+488         \{
+489             \textcolor{keywordflow}{if}(machine.sikhye.\hyperlink{class_vending_machine_1_1_product_a30a3d227efda7f0041ee4585d529ec45}{IsEmpty}())
+490             \{
+491                 \hyperlink{class_vending_machine_1_1_machine_u_i_a737e9b912652fdd8ed7824f12992d1bf}{error}(\textcolor{stringliteral}{"재고가 없습니다. 채워주세요"});
+492                 \textcolor{keywordflow}{return};
+493             \}
+494             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()<machine.sikhye.\hyperlink{class_vending_machine_1_1_product_abf388db99a413403b8ebad6abe8bb593}{getPrice}())
+495             \{
+496                 \hyperlink{class_vending_machine_1_1_machine_u_i_a737e9b912652fdd8ed7824f12992d1bf}{error}(\textcolor{stringliteral}{"금액이 부족합니다. 돈을 넣어주세요"});
+497                 \textcolor{keywordflow}{return};
+498             \}
+499             \textcolor{keywordflow}{else} 
+500             \{
+501                 machine.sikhye.\hyperlink{class_vending_machine_1_1_product_a45ff6ad466f274711d19adf7afbef20b}{setNumOfPurchased}(machine.sikhye.
+      \hyperlink{class_vending_machine_1_1_product_aefa8a5881c5569171a8cf1161b4bd911}{getNumOfPurchased}()+1);
+502                 machine.sikhye.\hyperlink{class_vending_machine_1_1_product_a09bbd37ae2e203492a3ca553adf3a8fc}{setnumOfStock}(machine.sikhye.
+      \hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}()-1);
+503                 change.\hyperlink{class_vending_machine_1_1_change_a400cce1d214d8e70ae8018aaaa8b1794}{settotal}(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()-machine.sikhye.
+      \hyperlink{class_vending_machine_1_1_product_abf388db99a413403b8ebad6abe8bb593}{getPrice}());
+504             \}
+505         \}
+506         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmd.equals(\textcolor{stringliteral}{"레츠비"}))
+507         \{
+508             \textcolor{keywordflow}{if}(machine.letsbe.\hyperlink{class_vending_machine_1_1_product_a30a3d227efda7f0041ee4585d529ec45}{IsEmpty}())
+509             \{
+510                 \hyperlink{class_vending_machine_1_1_machine_u_i_a737e9b912652fdd8ed7824f12992d1bf}{error}(\textcolor{stringliteral}{"재고가 없습니다. 채워주세요"});
+511                 \textcolor{keywordflow}{return};
+512             \}
+513             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()<machine.letsbe.\hyperlink{class_vending_machine_1_1_product_abf388db99a413403b8ebad6abe8bb593}{getPrice}())
+514             \{
+515                 \hyperlink{class_vending_machine_1_1_machine_u_i_a737e9b912652fdd8ed7824f12992d1bf}{error}(\textcolor{stringliteral}{"금액이 부족합니다. 돈을 넣어주세요"});
+516                 \textcolor{keywordflow}{return};
+517             \}
+518             \textcolor{keywordflow}{else} 
+519             \{
+520                 machine.letsbe.\hyperlink{class_vending_machine_1_1_product_a45ff6ad466f274711d19adf7afbef20b}{setNumOfPurchased}(machine.letsbe.
+      \hyperlink{class_vending_machine_1_1_product_aefa8a5881c5569171a8cf1161b4bd911}{getNumOfPurchased}()+1);
+521                 machine.letsbe.\hyperlink{class_vending_machine_1_1_product_a09bbd37ae2e203492a3ca553adf3a8fc}{setnumOfStock}(machine.letsbe.
+      \hyperlink{class_vending_machine_1_1_product_a199bec8565bf69e9231248a49076a01b}{getnumOfStock}()-1);
+522                 change.\hyperlink{class_vending_machine_1_1_change_a400cce1d214d8e70ae8018aaaa8b1794}{settotal}(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()-machine.letsbe.
+      \hyperlink{class_vending_machine_1_1_product_abf388db99a413403b8ebad6abe8bb593}{getPrice}());
+523             \}
+524         \}
+525         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmd.equals(\textcolor{stringliteral}{"콜라채우기"}))
+526         \{
+527             \textcolor{keywordflow}{if}(machine.cola.\hyperlink{class_vending_machine_1_1_product_ac21e8cb627fddac1d392a765348c630e}{IsFull}())
+528             \{
+529                 \hyperlink{class_vending_machine_1_1_machine_u_i_a737e9b912652fdd8ed7824f12992d1bf}{error}(\textcolor{stringliteral}{"콜라를 넣을 공간이 없습니다."});
+530                 \textcolor{keywordflow}{return};
+531             \}
+532             \textcolor{keywordflow}{else}
+533             \{
+534                 machine.cola.\hyperlink{class_vending_machine_1_1_product_a09bbd37ae2e203492a3ca553adf3a8fc}{setnumOfStock}(10);
+535                 \textcolor{keywordflow}{return};
+536             \}
+537         \}
+538         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmd.equals(\textcolor{stringliteral}{"사이다채우기"}))
+539         \{
+540             \textcolor{keywordflow}{if}(machine.cider.\hyperlink{class_vending_machine_1_1_product_ac21e8cb627fddac1d392a765348c630e}{IsFull}())
+541             \{
+542                 \hyperlink{class_vending_machine_1_1_machine_u_i_a737e9b912652fdd8ed7824f12992d1bf}{error}(\textcolor{stringliteral}{"사이다를 넣을 공간이 없습니다."});
+543                 \textcolor{keywordflow}{return};
+544             \}
+545             \textcolor{keywordflow}{else}
+546             \{
+547                 machine.cider.\hyperlink{class_vending_machine_1_1_product_a09bbd37ae2e203492a3ca553adf3a8fc}{setnumOfStock}(10);
+548                 \textcolor{keywordflow}{return};
+549             \}
+550         \}
+551         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmd.equals(\textcolor{stringliteral}{"물채우기"}))
+552         \{
+553             \textcolor{keywordflow}{if}(machine.water.\hyperlink{class_vending_machine_1_1_product_ac21e8cb627fddac1d392a765348c630e}{IsFull}())
+554             \{
+555                 \hyperlink{class_vending_machine_1_1_machine_u_i_a737e9b912652fdd8ed7824f12992d1bf}{error}(\textcolor{stringliteral}{"물을 넣을 공간이 없습니다."});
+556                 \textcolor{keywordflow}{return};
+557             \}
+558             \textcolor{keywordflow}{else}
+559             \{
+560                 machine.water.\hyperlink{class_vending_machine_1_1_product_a09bbd37ae2e203492a3ca553adf3a8fc}{setnumOfStock}(10);
+561                 \textcolor{keywordflow}{return};
+562             \}
+563         \}
+564         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmd.equals(\textcolor{stringliteral}{"식혜채우기"}))
+565         \{
+566             \textcolor{keywordflow}{if}(machine.sikhye.\hyperlink{class_vending_machine_1_1_product_ac21e8cb627fddac1d392a765348c630e}{IsFull}())
+567             \{
+568                 \hyperlink{class_vending_machine_1_1_machine_u_i_a737e9b912652fdd8ed7824f12992d1bf}{error}(\textcolor{stringliteral}{"식혜를 넣을 공간이 없습니다."});
+569                 \textcolor{keywordflow}{return};
+570             \}
+571             \textcolor{keywordflow}{else}
+572             \{
+573                 machine.sikhye.\hyperlink{class_vending_machine_1_1_product_a09bbd37ae2e203492a3ca553adf3a8fc}{setnumOfStock}(10);
+574                 \textcolor{keywordflow}{return};
+575             \}
+576         \}
+577         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmd.equals(\textcolor{stringliteral}{"레츠비채우기"}))
+578         \{
+579             \textcolor{keywordflow}{if}(machine.letsbe.\hyperlink{class_vending_machine_1_1_product_ac21e8cb627fddac1d392a765348c630e}{IsFull}())
+580             \{
+581                 \hyperlink{class_vending_machine_1_1_machine_u_i_a737e9b912652fdd8ed7824f12992d1bf}{error}(\textcolor{stringliteral}{"레츠비를 넣을 공간이 없습니다."});
+582                 \textcolor{keywordflow}{return};
+583             \}
+584             \textcolor{keywordflow}{else}
+585             \{
+586                 machine.letsbe.\hyperlink{class_vending_machine_1_1_product_a09bbd37ae2e203492a3ca553adf3a8fc}{setnumOfStock}(10);
+587                 \textcolor{keywordflow}{return};
+588             \}
+589         \}
+590         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmd.equals(\textcolor{stringliteral}{"1000원넣기"}))
+591         \{
+592             change.\hyperlink{class_vending_machine_1_1_change_a31d951e1dcdab0d4cbbc4e76219608ae}{setOneThousandWon}(change.\hyperlink{class_vending_machine_1_1_change_a4207ff32f227afb89076b87a3812cf2e}{getOneThousandWon}()+1);
+593             change.\hyperlink{class_vending_machine_1_1_change_a400cce1d214d8e70ae8018aaaa8b1794}{settotal}(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()+1000);
+594             \textcolor{keywordflow}{return};
+595         \}
+596         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmd.equals(\textcolor{stringliteral}{"500원넣기"}))
+597         \{
+598             change.\hyperlink{class_vending_machine_1_1_change_ae5dab6be91f68fc364f004649568deb8}{setFiveHundredWon}(change.\hyperlink{class_vending_machine_1_1_change_afa26632165b427a19133f182996587a3}{getFiveHundredWon}()+1);
+599             change.\hyperlink{class_vending_machine_1_1_change_a400cce1d214d8e70ae8018aaaa8b1794}{settotal}(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()+500);
+600             \textcolor{keywordflow}{return};
+601         \}
+602         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmd.equals(\textcolor{stringliteral}{"100원넣기"}))
+603         \{
+604             change.\hyperlink{class_vending_machine_1_1_change_accf770f112e4a58880b90d2d2941db3d}{setOneHundredWon}(change.\hyperlink{class_vending_machine_1_1_change_ac814aaff5cfe37b1a71899f750f4d99e}{getOneHundredWon}()+1);
+605             change.\hyperlink{class_vending_machine_1_1_change_a400cce1d214d8e70ae8018aaaa8b1794}{settotal}(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()+100);
+606             \textcolor{keywordflow}{return};
+607         \}
+608         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmd.equals(\textcolor{stringliteral}{"50원넣기"}))
+609         \{
+610             change.\hyperlink{class_vending_machine_1_1_change_a504308459778738b57096e5846d4a5ba}{setFiftyWon}(change.\hyperlink{class_vending_machine_1_1_change_a1ef85014ae005316e4a39db49e8364a7}{getFiftyWon}()+1);
+611             change.\hyperlink{class_vending_machine_1_1_change_a400cce1d214d8e70ae8018aaaa8b1794}{settotal}(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()+50);
+612             \textcolor{keywordflow}{return};
+613         \}
+614         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmd.equals(\textcolor{stringliteral}{"10원넣기"}))
+615         \{
+616             change.\hyperlink{class_vending_machine_1_1_change_a3fb3cf3b5c93c3c52fbc7d9c6a43af00}{setTenWon}(change.\hyperlink{class_vending_machine_1_1_change_ac6b95aa923e6727f5ecf8095b7f42e99}{getTenWon}()+1);
+617             change.\hyperlink{class_vending_machine_1_1_change_a400cce1d214d8e70ae8018aaaa8b1794}{settotal}(change.\hyperlink{class_vending_machine_1_1_change_a07a32d7240178343fa1273d075d73c64}{gettotal}()+10);
+618             \textcolor{keywordflow}{return};
+619         \}
+620         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmd.equals(\textcolor{stringliteral}{"1000원채움"}))
+621         \{
+622             change.\hyperlink{class_vending_machine_1_1_change_a31d951e1dcdab0d4cbbc4e76219608ae}{setOneThousandWon}(change.\hyperlink{class_vending_machine_1_1_change_a4207ff32f227afb89076b87a3812cf2e}{getOneThousandWon}()+20);
+623             \textcolor{keywordflow}{return};
+624         \}
+625         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmd.equals(\textcolor{stringliteral}{"500원채움"}))
+626         \{
+627             change.\hyperlink{class_vending_machine_1_1_change_ae5dab6be91f68fc364f004649568deb8}{setFiveHundredWon}(change.\hyperlink{class_vending_machine_1_1_change_afa26632165b427a19133f182996587a3}{getFiveHundredWon}()+20);
+628             \textcolor{keywordflow}{return};
+629         \}
+630         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmd.equals(\textcolor{stringliteral}{"100원채움"}))
+631         \{
+632             change.\hyperlink{class_vending_machine_1_1_change_accf770f112e4a58880b90d2d2941db3d}{setOneHundredWon}(change.\hyperlink{class_vending_machine_1_1_change_ac814aaff5cfe37b1a71899f750f4d99e}{getOneHundredWon}()+20);
+633             \textcolor{keywordflow}{return};
+634         \}
+635         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmd.equals(\textcolor{stringliteral}{"50원채움"}))
+636         \{
+637             change.\hyperlink{class_vending_machine_1_1_change_a504308459778738b57096e5846d4a5ba}{setFiftyWon}(change.\hyperlink{class_vending_machine_1_1_change_a1ef85014ae005316e4a39db49e8364a7}{getFiftyWon}()+20);
+638             \textcolor{keywordflow}{return};
+639         \}
+640         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmd.equals(\textcolor{stringliteral}{"10원채움"}))
+641         \{
+642             change.\hyperlink{class_vending_machine_1_1_change_a3fb3cf3b5c93c3c52fbc7d9c6a43af00}{setTenWon}(change.\hyperlink{class_vending_machine_1_1_change_ac6b95aa923e6727f5ecf8095b7f42e99}{getTenWon}()+20);
+643             \textcolor{keywordflow}{return};
+644         \}
+645         \textcolor{keywordflow}{else} \textcolor{comment}{//잔돈반환}
+646         \{
+647             change.\hyperlink{class_vending_machine_1_1_change_a8a18aaee61e801a42585bcab94aa57cf}{refund}();
+648             JOptionPane.showMessageDialog(null, \textcolor{stringliteral}{"1000원 : "} + String.valueOf(change.
+      \hyperlink{class_vending_machine_1_1_change_a304e4aabef0c0ff7e21b3e761489f076}{getR\_oneThousandWon}()) + \textcolor{stringliteral}{"\(\backslash\)n"}
+649                     + \textcolor{stringliteral}{"500원 : "} + String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a884e656f905999d7181b680299e9c9e9}{getR\_fiveHundredWon}()) + \textcolor{stringliteral}{"\(\backslash\)n"} 
+650                     + \textcolor{stringliteral}{"100원 : "} + String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a009fddaf04c554a4f3ecc9907b6a929e}{getR\_oneHundredWon}()) + \textcolor{stringliteral}{"\(\backslash\)n"}
+651                     + \textcolor{stringliteral}{"50원 : "} + String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a9d9200ae5ebb4b68d5f8435a16cbc905}{getR\_fiftyWon}()) + \textcolor{stringliteral}{"\(\backslash\)n"}
+652                     + \textcolor{stringliteral}{"10원 : "} + String.valueOf(change.\hyperlink{class_vending_machine_1_1_change_a61c2682e5f0b7999cb830a45a94bfc78}{getR\_tenWon}()) + \textcolor{stringliteral}{"\(\backslash\)n"},
+653                     \textcolor{stringliteral}{"잔돈이 반환되었습니다."},
+654                     JOptionPane.INFORMATION\_MESSAGE);
+655             \textcolor{keywordflow}{return};
+656         \}
+657         JOptionPane.showMessageDialog(null, \textcolor{stringliteral}{"맛나게 드세요"}, \textcolor{stringliteral}{"주문하신 음료나왔습니다."}, 
+658                 JOptionPane.INFORMATION\_MESSAGE);
+659     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+
+
+
+
+\subsection{멤버 데이타 문서화}
+\index{Vending\+Machine\+::\+Machine\+UI@{Vending\+Machine\+::\+Machine\+UI}!content\+Pane@{content\+Pane}}
+\index{content\+Pane@{content\+Pane}!Vending\+Machine\+::\+Machine\+UI@{Vending\+Machine\+::\+Machine\+UI}}
+\subsubsection[{\texorpdfstring{content\+Pane}{contentPane}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Panel Vending\+Machine.\+Machine\+U\+I.\+content\+Pane\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}{}\label{class_vending_machine_1_1_machine_u_i_ac8ef25585e46da798d067af0eefa1a03}
+
+
+Machine\+U\+I.\+java 파일의 31 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/pub/workspace/\+S\+Eproject1/src/\+Vending\+Machine/\hyperlink{_machine_u_i_8java}{Machine\+U\+I.\+java}\end{DoxyCompactItemize}

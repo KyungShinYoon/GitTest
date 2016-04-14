@@ -1,0 +1,6 @@
+digraph "VendingMachine.Change"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{VendingMachine.Change\n|- tenWon\l- fiftyWon\l- oneHundredWon\l- fiveHundredWon\l- oneThousandWon\l- R_tenWon\l- R_fiftyWon\l- R_oneHundredWon\l- R_fiveHundredWon\l- R_oneThousandWon\l- total\l|+ getR_tenWon()\l+ setR_tenWon()\l+ getR_fiftyWon()\l+ setR_fiftyWon()\l+ getR_oneHundredWon()\l+ setR_oneHundredWon()\l+ getR_fiveHundredWon()\l+ setR_fiveHundredWon()\l+ getR_oneThousandWon()\l+ setR_oneThousandWon()\l그리고 13개 더...\l~ Change()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}
